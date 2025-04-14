@@ -85,7 +85,7 @@
 		align-items: center;
 		border-bottom: 3px solid var(--accent-color);
 		box-shadow: 0px -50px 100px 0px rgba(255, 130, 46, 0.9);
-		margin-bottom: 10px;
+		z-index: 10000;
 	}
 
 	.logo svg {

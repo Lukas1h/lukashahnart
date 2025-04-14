@@ -1,113 +1,257 @@
 <script lang="ts">
-	import FilmBorderImage from '$lib/components/FilmBorderImage.svelte';
 	import { onMount } from 'svelte';
+	import type { PageProps } from './$types';
 
-	function random(a: number) {
-		return function () {
-			let t = (a += 0x6d2b79f5);
-			t = Math.imul(t ^ (t >>> 15), t | 1);
-			t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-			return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-		};
-	}
-
-	let mouseX = 0;
-	let mouseY = 0;
-
-	// Update mouse position on mousemove
-	function handleMouseMove(event: MouseEvent) {
-		const centerX = window.innerWidth / 2;
-		const centerY = window.innerHeight / 2;
-
-		// Calculate mouse position relative to the center
-		mouseX = event.clientX;
-		mouseY = event.clientY;
-
-		// Update CSS variables
-		document.documentElement.style.setProperty('--mouse-x', `${mouseX}px`);
-		document.documentElement.style.setProperty('--mouse-y', `${mouseY}px`);
-	}
-
-	onMount(() => {
-		document.querySelectorAll('.strip').forEach((strip, index) => {
-			const rotation = index % 2 == 0 ? random(index)() * -6 - 1 : random(index)() * 6; // Random rotation between -1 and -5 degrees
-			const scale = random(index)() * 0.4 + 1; // Random scale between 0.8 and 1.0
-			const xOffset = index % 2 == 0 ? random(index)() * -10 : random(index)() * 10; // Random x offset between -10 and 10
-			const marginBottom = random(index)() * 50 + 10; // Random margin bottom between 10 and 30
-			(strip as HTMLElement).style.transform =
-				`rotate(${rotation}deg) scale(${scale}) translateX(${xOffset}px)`;
-			(strip as HTMLElement).style.marginBottom = `${marginBottom}px`;
-		});
-	});
+	let { data }: PageProps = $props();
+	const categories = data.props.images;
 </script>
 
-<h1>Film Photogrpahy</h1>
-
-<div
-	class="container"
-	on:mousemove={handleMouseMove}
-	role="application"
-	aria-roledescription="container"
->
-	<div class="strip strip1">
-		<FilmBorderImage href="/film.jpg" />
-		<FilmBorderImage href="/film.jpg" />
-		<FilmBorderImage href="/film.jpg" />
-		<FilmBorderImage href="/film.jpg" />
+<main>
+	<!-- Hero -->
+	<div id="hero">
+		<h1>lukashahn.art</h1>
+		<h2>photography/videography</h2>
 	</div>
 
-	<div class="strip strip2">
-		<FilmBorderImage href="/film.jpg" />
-		<FilmBorderImage href="/film.jpg" />
-		<FilmBorderImage href="/film.jpg" />
-		<FilmBorderImage href="/film.jpg" />
-	</div>
+	<!-- About Section -->
+	<section>
+		<h1>About</h1>
+		<hr />
+		<p style="font-size: 1.4rem; line-height: 2rem; margin-bottom: 2rem; ">
+			<span style="display: block;"
+				>I'm <span style="font-family:Caprasimo; font-size:3.8rem">Lukas Hahn</span>,</span
+			>
 
-	<div class="strip strip2">
-		<FilmBorderImage href="/film.jpg" />
-		<FilmBorderImage href="/film.jpg" />
-		<FilmBorderImage href="/film.jpg" />
-		<FilmBorderImage href="/film.jpg" />
-	</div>
+			<span style="display: block; padding:0.5rem;"
+				>a <span style="font-weight: 500; font-size:2.2rem">photographer</span> and
+				<span style="font-weight: 500; font-size:2.2rem">videographer</span>
+				from</span
+			>
+			<span
+				style="margin-top:1rem; display:block; font-family: Borel; font-size:2.8rem; line-height:3.5rem;"
+				>The Pacific Northwest.</span
+			>
+		</p>
 
-	<div class="strip strip2">
-		<FilmBorderImage href="/film.jpg" />
-		<FilmBorderImage href="/film.jpg" />
-		<FilmBorderImage href="/film.jpg" />
-		<FilmBorderImage href="/film.jpg" />
-	</div>
-</div>
+		<p>
+			<span style="font-family: Caprasimo; font-size:2rem; display:block;"
+				>Since I was a kid...</span
+			>
+			... I’ve had a passion for capturing life—mine and others'—in fun, creative ways. When I was 10,
+			I bought my first camera: an old GoPro I used for years to film family moments and make little
+			YouTube videos. I learned photography on my mom’s old camera, telling stories through pictures
+			of the LEGO builds I loved. Since then, I’ve started taking my hobby more seriously. I’ve worked
+			on all kinds of photo and video projects—from sports and events to interviews, promotional pieces,
+			weddings, and music videos for local artists.
+		</p>
+	</section>
 
-<style>
-	.container {
+	<section>
+		<h1>Services</h1>
+		<hr />
+		<div style="display:flex; flex-direction:column; gap: 1.5rem; max-width: 30rem;margin: auto;">
+			<div>
+				<h2>Video</h2>
+				<p style="font-size: 1.4rem; line-height: 1.8rem;">
+					Filming + editing for events, interviews, promotional videos, weddings, music videos, and
+					more.
+				</p>
+			</div>
+			<div>
+				<h2>Photo</h2>
+				<p style="font-size: 1.4rem; line-height: 1.8rem;">
+					Event coverage, portraits, and real estate photography.
+				</p>
+			</div>
+			<div>
+				<h2>Drone</h2>
+				<p style="font-size: 1.4rem; line-height: 1.8rem;">
+					Aerial photography and videography for events, real estate, and more.
+				</p>
+			</div>
+			<div>
+				<h2>Web</h2>
+				<p style="font-size: 1.4rem; line-height: 1.8rem;">
+					Simple, functional websites—designed and built from scratch.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h1>Portfolio</h1>
+		<hr />
+		<div class="portfolio-content">
+			<iframe
+				class="landscape"
+				src="https://www.youtube-nocookie.com/embed/VMK7k01P9Dc?si=cBA5xrZlsywVQK0T"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen
+			></iframe>
+			<iframe
+				class="landscape"
+				src="https://www.youtube.com/embed/cvpaMmWy62I?si=EQZp0o0vQdu16BKn"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen
+			></iframe>
+			<iframe
+				class="landscape"
+				src="https://www.youtube.com/embed/S5i9EJA9T9w?si=jEFNDNIRXVS8iwo_"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen
+			></iframe>
+			<iframe
+				class="portrait"
+				src="https://www.youtube.com/embed/7fsFR22xYRA?si=rguZZTjfRYfNlgtf"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen
+			></iframe>
+			<iframe
+				class="portrait"
+				src="https://www.youtube.com/embed/Ve3uSnPAUX8?si=5tckSgpxrhkV7M3o"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen
+			></iframe>
+		</div>
+		{#each categories as category}
+			<h1>{category.category}</h1>
+			<h2>{category.description}</h2>
+			<div class="portfolio-content">
+				{#each category.images as image}
+					<img src={image.url} alt="" loading="lazy" />
+				{/each}
+			</div>
+		{/each}
+	</section>
+</main>
+
+<style lang="scss">
+	.portfolio-content {
 		display: grid;
-		grid-template-columns: 1fr;
-		gap: 80px;
-		margin-top: 20px;
-		justify-items: center; /* Centers strips horizontally */
-		counter-reset: line-number;
-		max-width: 1000px;
-		margin: 20px auto;
+		grid-template-columns: 1fr 1fr;
+		flex-direction: column;
+		gap: 1rem;
+
+		iframe {
+			border-radius: 2rem;
+			border: var(--accent-color) solid 3px;
+			box-shadow: 0px 0 50px 0px rgba(255, 130, 46, 0.2);
+		}
+
+		img {
+			border-radius: 2rem;
+			border: var(--accent-color) solid 3px;
+			box-shadow: 0px 0 50px 0px rgba(255, 130, 46, 0.2);
+		}
+
+		.landscape {
+			grid-area: span 2 / span 2;
+			aspect-ratio: 16 / 9;
+			width: 100%;
+		}
+
+		.portrait {
+			grid-area: span 2 / span 1;
+			aspect-ratio: 9 / 16;
+			width: 100%;
+		}
 	}
 
-	.strip {
-		counter-increment: line-number;
-
+	main {
 		display: flex;
-		width: 80%;
-		transform: scale(0.5);
-		box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-		transition: all 0.1s ease;
-		align-self: center;
+		flex-direction: column;
+		align-items: center;
+		width: 100vw;
+		overflow: hidden;
 	}
 
-	.strip:nth-child(odd) {
-		align-self: start;
+	#hero {
+		background-image: url('/film-strip.png');
+		background-repeat: repeat-x;
+		background-size: auto 100%;
+		background-position: center;
+		width: 120%;
+		height: calc(clamp(2rem, 10vw, 3.75rem) * 9);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		rotate: -4deg;
+		z-index: -1000;
+		margin-bottom: 6rem;
+
+		h1 {
+			text-align: center;
+			font-family: 'Caprasimo';
+			text-align: center;
+			font-weight: 400;
+			font-style: normal;
+			font-size: calc(clamp(2rem, 10vw, 3.75rem) + 0rem);
+
+			line-height: calc(clamp(2rem, 10vw, 3.75rem) - 0.625rem);
+		}
+
+		h2 {
+			font-family: 'Aleo';
+			text-align: center;
+			font-weight: 400;
+			font-size: calc(clamp(2rem, 10vw, 3.75rem) / 1.7);
+		}
 	}
 
-	.strip:hover {
-		box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-		transform: translate(calc(var(--mouse-x) / 50), calc(var(--mouse-y) / 50));
-		z-index: 999;
+	section {
+		width: 100%;
+		padding: 2rem;
+		max-width: 50rem;
+		margin-bottom: 6rem;
+
+		h1 {
+			font-family: 'Staatliches';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 3rem;
+			line-height: 2rem;
+			text-align: center;
+		}
+
+		h2 {
+			font-family: 'Caprasimo';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 1.8rem;
+			line-height: 42px;
+			text-align: center;
+		}
+		hr {
+			/* Line 1 */
+			border: none;
+			height: 0px;
+			border-bottom: 3px solid #b85949;
+			box-shadow: 0px 0px 100px rgba(255, 130, 46, 0.9);
+			width: 100%;
+			padding: 0 1rem;
+			margin-bottom: 3rem;
+		}
+
+		p {
+			font-family: 'Aleo', serif;
+			text-align: center;
+			font-size: 1.1rem;
+			font-weight: 300;
+		}
 	}
 </style>

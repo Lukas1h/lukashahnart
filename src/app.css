@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Borel&family=Caprasimo&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap');
+
 
 /* CSS Vars */
 * {
@@ -14,11 +15,11 @@ body {
 	overflow-x: hidden;
 }
 
-h1 {
+/* h1 {
 	font-family: 'Staatliches', Helvetica;
 	font-size: 3rem;
 	text-align: center;
-}
+} */
 
 a {
 	text-decoration: underline;
