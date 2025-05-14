@@ -77,7 +77,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<!-- <section id="portfolio">
 		<h1>Portfolio</h1>
 		<hr />
 		<div class="portfolio-content">
@@ -128,15 +128,20 @@
 			></iframe>
 		</div>
 		{#each categories as category}
-			<h1>{category.category}</h1>
-			<h2>{category.description}</h2>
-			<div class="portfolio-content">
-				{#each category.images as image}
-					<img src={image.url} alt="" loading="lazy" />
-				{/each}
-			</div>
+			<section class="portfolio-category">
+				<header>
+					<h2>{category.category}</h2>
+					<h3>{category.description}</h3>
+				</header>
+
+				<div class="portfolio-content">
+					{#each category.images as image}
+						<img src={image.url} alt="" loading="lazy" />
+					{/each}
+				</div>
+			</section>
 		{/each}
-	</section>
+	</section> -->
 </main>
 
 <style lang="scss">
@@ -152,12 +157,6 @@
 			box-shadow: 0px 0 50px 0px rgba(255, 130, 46, 0.2);
 		}
 
-		img {
-			border-radius: 2rem;
-			border: var(--accent-color) solid 3px;
-			box-shadow: 0px 0 50px 0px rgba(255, 130, 46, 0.2);
-		}
-
 		.landscape {
 			grid-area: span 2 / span 2;
 			aspect-ratio: 16 / 9;
@@ -168,6 +167,19 @@
 			grid-area: span 2 / span 1;
 			aspect-ratio: 9 / 16;
 			width: 100%;
+		}
+	}
+
+	.portfolio-category {
+		header {
+			margin: 5rem 1rem 1rem 1rem;
+		}
+		h2 {
+			font-size: 2.2rem;
+		}
+		img {
+			border-radius: 0.2rem;
+			box-shadow: 0px 0 50px 0px rgba(255, 130, 46, 0.2);
 		}
 	}
 
@@ -213,7 +225,7 @@
 		}
 	}
 
-	section {
+	main > section {
 		width: 100%;
 		padding: 2rem;
 		max-width: 50rem;
@@ -236,6 +248,15 @@
 			line-height: 42px;
 			text-align: center;
 		}
+		h3 {
+			font-family: 'Aleo';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 1.4rem;
+			line-height: 1.5rem;
+			text-align: center;
+		}
+
 		hr {
 			/* Line 1 */
 			border: none;
