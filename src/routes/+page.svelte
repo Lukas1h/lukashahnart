@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import type { PageProps } from './$types';
+	import Divider from '$lib/components/ui/Divider.svelte';
 
 	let { data }: PageProps = $props();
 	const categories = data.props.images;
@@ -16,10 +17,7 @@
 	<!-- About Section -->
 	<section>
 		<h1>About</h1>
-		<div class="line"></div>
-		<div class="divider">
-			<div class="line"></div>
-		</div>
+		<Divider />
 
 		<p style="font-size: 1.4rem; line-height: 2rem; margin-bottom: 2rem; ">
 			<span style="display: block;"
@@ -52,7 +50,7 @@
 
 	<section>
 		<h1>Services</h1>
-		<hr />
+		<Divider />
 		<div style="display:flex; flex-direction:column; gap: 1.5rem; max-width: 30rem;margin: auto;">
 			<div>
 				<h2>Video</h2>
@@ -149,43 +147,6 @@
 </main>
 
 <style lang="scss">
-	@keyframes wave {
-		0% {
-			background-position: -75px;
-		}
-		100% {
-			background-position: 0;
-		}
-	}
-
-	.divider {
-		width: 100%;
-		overflow: hidden;
-		margin-bottom: 4rem;
-	}
-
-	// .line {
-	// 	width: 100%;
-	// 	height: 3px;
-	// 	background-color: var(--accent-color);
-	// 	box-shadow: 0px 0px 100px rgba(255, 130, 46, 0.9);
-	// }
-
-	.divider .line {
-		position: relative;
-		animation: wave 0.6s linear infinite;
-		background-image: url('/wavy-line.svg');
-		background-repeat: repeat-x;
-		background-size: cover;
-		width: 100%;
-		height: 10px;
-
-		// filter: drop-shadow(0px 0px 100px rgba(255, 130, 46, 0.9));
-		// background-color: red;
-		padding: 0 1rem;
-		margin-top: 1rem;
-	}
-
 	.portfolio-content {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
