@@ -16,7 +16,11 @@
 	<!-- About Section -->
 	<section>
 		<h1>About</h1>
-		<hr />
+		<div class="line"></div>
+		<div class="divider">
+			<div class="line"></div>
+		</div>
+
 		<p style="font-size: 1.4rem; line-height: 2rem; margin-bottom: 2rem; ">
 			<span style="display: block;"
 				>I'm <span style="font-family:Caprasimo; font-size:3.8rem">Lukas Hahn</span>,</span
@@ -145,6 +149,43 @@
 </main>
 
 <style lang="scss">
+	@keyframes wave {
+		0% {
+			background-position: -75px;
+		}
+		100% {
+			background-position: 0;
+		}
+	}
+
+	.divider {
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 4rem;
+	}
+
+	// .line {
+	// 	width: 100%;
+	// 	height: 3px;
+	// 	background-color: var(--accent-color);
+	// 	box-shadow: 0px 0px 100px rgba(255, 130, 46, 0.9);
+	// }
+
+	.divider .line {
+		position: relative;
+		animation: wave 0.6s linear infinite;
+		background-image: url('/wavy-line.svg');
+		background-repeat: repeat-x;
+		background-size: cover;
+		width: 100%;
+		height: 10px;
+
+		// filter: drop-shadow(0px 0px 100px rgba(255, 130, 46, 0.9));
+		// background-color: red;
+		padding: 0 1rem;
+		margin-top: 1rem;
+	}
+
 	.portfolio-content {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -192,19 +233,11 @@
 	}
 
 	#hero {
-		background-image: url('/film-strip.png');
-		background-repeat: repeat-x;
-		background-size: auto 100%;
-		background-position: center;
-		width: 120%;
-		height: calc(clamp(2rem, 10vw, 3.75rem) * 9);
-		display: flex;
 		flex-direction: column;
+		display: flex;
 		align-items: center;
 		justify-content: center;
-		rotate: -4deg;
-		z-index: -1000;
-		margin-bottom: 6rem;
+		height: calc(60vh);
 
 		h1 {
 			text-align: center;
