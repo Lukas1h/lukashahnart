@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import type { PageProps } from './$types';
-	import Divider from '$lib/components/ui/Divider.svelte';
+	import WavyDivider from '$lib/components/ui/WavyDivider.svelte';
 
 	let { data }: PageProps = $props();
 	const categories = data.props.images;
@@ -13,11 +13,27 @@
 		<h1>lukashahn.art</h1>
 		<h2>photography/videography</h2>
 	</div>
+	<!-- Contact Section -->
+
+	<section id="contact">
+		<h1>Contact Me</h1>
+		<WavyDivider />
+		<p>
+			Feel free to send me an email at <br /><a href="mailto:lukas@lukashahn.art"
+				>lukas@lukashahn.art</a
+			><br />
+		</p>
+		<br />
+		<p>
+			or DM me on Instagram <br /><a href="https://instagram.com/lukashahnart">@lukashahnart</a>.<br
+			/>
+		</p>
+	</section>
 
 	<!-- About Section -->
-	<section>
+	<section id="about">
 		<h1>About</h1>
-		<Divider />
+		<WavyDivider direction="left" />
 
 		<p style="font-size: 1.4rem; line-height: 2rem; margin-bottom: 2rem; ">
 			<span style="display: block;"
@@ -50,7 +66,7 @@
 
 	<section>
 		<h1>Services</h1>
-		<Divider />
+		<WavyDivider />
 		<div style="display:flex; flex-direction:column; gap: 1.5rem; max-width: 30rem;margin: auto;">
 			<div>
 				<h2>Video</h2>
@@ -79,6 +95,7 @@
 			</div>
 		</div>
 	</section>
+
 	<!-- <section id="portfolio">
 		<h1>Portfolio</h1>
 		<hr />
@@ -219,11 +236,24 @@
 		}
 	}
 
+	section#contact {
+		p {
+			font-size: 1.45rem;
+			line-height: 2rem;
+		}
+
+		a {
+			font-size: 2rem;
+			font-weight: 800;
+			text-decoration-thickness: 0.3rem;
+		}
+	}
+
 	main > section {
 		width: 100%;
 		padding: 2rem;
 		max-width: 50rem;
-		margin-bottom: 6rem;
+		margin-bottom: 3rem;
 
 		h1 {
 			font-family: 'Staatliches';

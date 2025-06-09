@@ -8,6 +8,7 @@
 	--accent-color: #b85949;
 	--glow-color: rgba(255, 130, 46, 0.9);
 }
+
 /* Default Styles */
 body {
 	background: var(--background-color);
@@ -23,8 +24,9 @@ body {
 
 a {
 	text-decoration: underline;
-	text-decoration-color: var(--accent-color); /* Tomato color */
-	text-decoration-thickness: 4px;
+	text-decoration-color: var(--accent-color);
+	/* Tomato color */
+	text-decoration-thickness: 3px;
 	text-decoration-style: solid;
 	color: var(--foreground-color);
 	font-weight: bold;
@@ -41,6 +43,7 @@ a {
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Remove default margin */
 body,
 h1,
