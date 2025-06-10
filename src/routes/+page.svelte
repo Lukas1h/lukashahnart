@@ -3,32 +3,19 @@
 	import type { PageProps } from './$types';
 	import WavyDivider from '$lib/components/ui/WavyDivider.svelte';
 
+	import HeroSection from '$lib/components/home/HeroSection';
+	import ContactSection from '$lib/components/home/ContactSection';
+	import InstagramFeedSection from '$lib/components/home/InstagramFeedSection';
+	import ServicesSection from '$lib/components/home/ServicesSection';
+
 	let { data }: PageProps = $props();
-	const categories = data.props.images;
+	const { instagramPosts } = data.props;
 </script>
 
 <main>
-	<!-- Hero -->
-	<div id="hero">
-		<h1>lukashahn.art</h1>
-		<h2>photography/videography</h2>
-	</div>
-	<!-- Contact Section -->
+	<HeroSection />
 
-	<section id="contact">
-		<h1>Contact Me</h1>
-		<WavyDivider />
-		<p>
-			Feel free to send me an email at <br /><a href="mailto:lukas@lukashahn.art"
-				>lukas@lukashahn.art</a
-			><br />
-		</p>
-		<br />
-		<p>
-			or DM me on Instagram <br /><a href="https://instagram.com/lukashahnart">@lukashahnart</a>.<br
-			/>
-		</p>
-	</section>
+	<ContactSection />
 
 	<!-- About Section -->
 	<section id="about">
@@ -64,37 +51,9 @@
 		</p>
 	</section>
 
-	<section>
-		<h1>Services</h1>
-		<WavyDivider />
-		<div style="display:flex; flex-direction:column; gap: 1.5rem; max-width: 30rem;margin: auto;">
-			<div>
-				<h2>Video</h2>
-				<p style="font-size: 1.4rem; line-height: 1.8rem;">
-					Filming + editing for events, interviews, promotional videos, weddings, music videos, and
-					more.
-				</p>
-			</div>
-			<div>
-				<h2>Photo</h2>
-				<p style="font-size: 1.4rem; line-height: 1.8rem;">
-					Event coverage, portraits, and real estate photography.
-				</p>
-			</div>
-			<div>
-				<h2>Drone</h2>
-				<p style="font-size: 1.4rem; line-height: 1.8rem;">
-					Aerial photography and videography for events, real estate, and more.
-				</p>
-			</div>
-			<div>
-				<h2>Web</h2>
-				<p style="font-size: 1.4rem; line-height: 1.8rem;">
-					Simple, functional websites—designed and built from scratch.
-				</p>
-			</div>
-		</div>
-	</section>
+	<ServicesSection />
+
+	<InstagramFeedSection posts={instagramPosts} />
 
 	<!-- <section id="portfolio">
 		<h1>Portfolio</h1>

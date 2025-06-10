@@ -32,7 +32,7 @@
 	.divider {
 		width: 100%;
 		overflow: hidden;
-		margin-bottom: 3rem;
+		margin-bottom: 2rem;
 		.line {
 			position: relative;
 			background-image: url('/wavy-line.svg');
