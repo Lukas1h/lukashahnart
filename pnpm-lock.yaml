@@ -8,9 +8,24 @@ importers:
 
   .:
     dependencies:
+      '@braebo/pocket-shader':
+        specifier: npm:@jsr/braebo__pocket-shader@^0.3.1
+        version: '@jsr/braebo__pocket-shader@0.3.1'
       instafeed.js:
         specifier: ^2.0.0
         version: 2.0.0
+      pocket:
+        specifier: ^0.1.0
+        version: 0.1.0
+      pocket-shader:
+        specifier: ^0.3.1
+        version: 0.3.1
+      svader:
+        specifier: ^0.5.4
+        version: 0.5.4(svelte@5.25.6)
+      svelte-intersection-observer:
+        specifier: ^1.0.0
+        version: 1.0.0
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^4.0.0
@@ -222,6 +237,9 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
+
+  '@jsr/braebo__pocket-shader@0.3.1':
+    resolution: {integrity: sha512-vjZSSLrSTNGV4po8fhcF2cBalRnSk1EkP4dr6fN46qlm9nlV9C+EmstD3bJRxuUHNYxN7UyP0fLf3WUsu3Zxfw==, tarball: https://npm.jsr.io/~/11/@jsr/braebo__pocket-shader/0.3.1.tgz}
 
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
@@ -466,6 +484,11 @@ packages:
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
 
+  mkdirp@3.0.1:
+    resolution: {integrity: sha512-+NsyUUAZDmo6YVHzL/stxSu3t9YS1iljliy3BSDrXJ/dkn1KYdmtZODGGjLcc9XLgVVpH4KshHB8XmZgMhaBXg==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
@@ -484,6 +507,13 @@ packages:
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
+
+  pocket-shader@0.3.1:
+    resolution: {integrity: sha512-2qHHDqTMB2+9bqGY4GQ/Hbkvk6s6TexA6ScZ2iKcYNLstraFKXDFRcHLbRMyTOJ0UoelR2l4DE4KMqjdKEeKgg==}
+
+  pocket@0.1.0:
+    resolution: {integrity: sha512-YThiF4+wAf1fdCUpKflx3NzbmfrsAqLGKp2BIrIfakXtHnmJ4S8fqevLwzP+6q3JA66Gqi2rrVqqi+0OHbMvPw==}
+    engines: {node: '>= 0.4.0'}
 
   postcss@8.5.3:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
@@ -656,6 +686,11 @@ packages:
     resolution: {integrity: sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==}
     engines: {node: '>=10'}
 
+  svader@0.5.4:
+    resolution: {integrity: sha512-GPTMNjK+S9+l5f5eDGC1L+6QMUE0T8FkM131XxxITLyueT7FU2NkjIQqtLWjygWJ8SQU2ODIymdXqpYLuK3Cyw==}
+    peerDependencies:
+      svelte: ^5.0.0||^4.0.0
+
   svelte-check@4.1.5:
     resolution: {integrity: sha512-Gb0T2IqBNe1tLB9EB1Qh+LOe+JB8wt2/rNBDGvkxQVvk8vNeAoG+vZgFB/3P5+zC7RWlyBlzm9dVjZFph/maIg==}
     engines: {node: '>= 18.0.0'}
@@ -663,6 +698,9 @@ packages:
     peerDependencies:
       svelte: ^4.0.0 || ^5.0.0-next.0
       typescript: '>=5.0.0'
+
+  svelte-intersection-observer@1.0.0:
+    resolution: {integrity: sha512-AoxSog8fSt9sSN8ajMYM1I48ndq+rmPlaZSkJFCRbZ7I3KO8IPX6pl5mewWxdYL1JDI06hHu/7epn3h5tlJV9w==}
 
   svelte@5.25.6:
     resolution: {integrity: sha512-RGkaeAXDuJdvhA1fdSM5GgD++vYfJYijZL0uN6kM2s/TRJ663jktBhZlF0qjzAJGR/34PtaeT3G8MKJY1EKeqg==}
@@ -842,6 +880,8 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  '@jsr/braebo__pocket-shader@0.3.1': {}
 
   '@polka/url@1.0.0-next.28': {}
 
@@ -1044,6 +1084,8 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
 
+  mkdirp@3.0.1: {}
+
   mri@1.2.0: {}
 
   mrmime@2.0.1: {}
@@ -1053,6 +1095,12 @@ snapshots:
   nanoid@3.3.11: {}
 
   picocolors@1.1.1: {}
+
+  pocket-shader@0.3.1: {}
+
+  pocket@0.1.0:
+    dependencies:
+      mkdirp: 3.0.1
 
   postcss@8.5.3:
     dependencies:
@@ -1209,6 +1257,10 @@ snapshots:
     dependencies:
       has-flag: 4.0.0
 
+  svader@0.5.4(svelte@5.25.6):
+    dependencies:
+      svelte: 5.25.6
+
   svelte-check@4.1.5(svelte@5.25.6)(typescript@5.8.3):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
@@ -1220,6 +1272,8 @@ snapshots:
       typescript: 5.8.3
     transitivePeerDependencies:
       - picomatch
+
+  svelte-intersection-observer@1.0.0: {}
 
   svelte@5.25.6:
     dependencies:

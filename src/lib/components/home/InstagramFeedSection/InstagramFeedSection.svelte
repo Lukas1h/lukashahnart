@@ -4,6 +4,7 @@
 	import InstagramFeedItem from './InstagramFeedItem.svelte';
 	import Section from '$lib/components/ui/Section.svelte';
 	import WavyDivider from '$lib/components/ui/WavyDivider.svelte';
+	import { onMount } from 'svelte';
 	let { posts } = $props();
 </script>
 

@@ -1,32 +1,50 @@
 <script>
+	// @ts-nocheck
+
+	import IntersectionObserver from 'svelte-intersection-observer';
+
 	let { post } = $props();
+
+	let element = $state(undefined);
+	let intersecting = $state(false);
+	let image;
 </script>
 
-<div class="container">
-	<div class="inner-container">
-		<div class="side-text">
-			<p>@lukashahnart</p>
-			<p>
-				{new Date(post.timestamp).toLocaleDateString('en-US', {
-					month: 'short',
-					day: 'numeric',
-					year: 'numeric'
-				})}
-			</p>
+<IntersectionObserver {element} bind:intersecting threshold={0.3}>
+	<div class={`container ${intersecting && 'visible'}`} bind:this={element}>
+		<div class="inner-container">
+			<div class="side-text">
+				<p>@lukashahnart</p>
+				<p>
+					{new Date(post.timestamp).toLocaleDateString('en-US', {
+						month: 'short',
+						day: 'numeric',
+						year: 'numeric'
+					})}
+				</p>
+			</div>
+			<div style="width: 100%; background-color:var(--foreground-color);">
+				<img src={post.media_url} alt="" />
+			</div>
 		</div>
-		<div style="width: 100%; background-color:var(--foreground-color);">
-			<img src={post.media_url} alt="" />
+		<div class="bottom-text">
+			<!-- <p>{post.caption}</p> -->
 		</div>
 	</div>
-	<div class="bottom-text">
-		<!-- <p>{post.caption}</p> -->
-	</div>
-</div>
+</IntersectionObserver>
 
 <style>
 	.container {
 		max-width: 500px;
 		margin: 2rem auto;
+		transition: all 0.4s;
+		opacity: 0.1;
+		transform: scale(0.8);
+	}
+
+	.visible {
+		opacity: 100;
+		transform: scale(1);
 	}
 
 	.inner-container {
