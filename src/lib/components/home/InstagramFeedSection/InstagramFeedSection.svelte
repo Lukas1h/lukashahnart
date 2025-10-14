@@ -8,7 +8,7 @@
 	let { posts } = $props();
 </script>
 
-<Section title="Instagram" alt>
+<Section title="Instagram" alt overflow={true}>
 	<div class="posts-container">
 		{#each posts.filter((e) => {
 			return e.media_type === 'IMAGE' || e.media_type === 'CAROUSEL_ALBUM';
