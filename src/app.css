@@ -14,7 +14,9 @@ body {
 	background: var(--background-color);
 	color: var(--foreground-color);
 	overflow-x: hidden;
+	overscroll-behavior-x: none;
 }
+
 
 /* h1 {
 	font-family: 'Staatliches', Helvetica;

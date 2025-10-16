@@ -15,8 +15,6 @@
 <main>
 	<HeroSection />
 
-	<ContactSection />
-
 	<!-- About Section -->
 	<section id="about">
 		<h1>About</h1>
@@ -50,6 +48,8 @@
 			weddings, and music videos for local artists.
 		</p>
 	</section>
+
+	<ContactSection />
 
 	<ServicesSection />
 
@@ -210,9 +210,8 @@
 
 	main > section {
 		width: 100%;
-		padding: 2rem;
 		max-width: 50rem;
-		margin-bottom: 3rem;
+		margin-bottom: 8rem;
 
 		h1 {
 			font-family: 'Staatliches';
