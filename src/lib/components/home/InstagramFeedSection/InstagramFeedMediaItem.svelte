@@ -1,18 +1,13 @@
 <script>
-	let { timestamp, media_url, intersectionElement } = $props();
+	let { timestamp, media_url, isCurrent = true } = $props();
 	import IntersectionObserver from 'svelte-intersection-observer';
 
 	let intersecting = $state(false);
 	let element = $state(undefined);
-
-	$effect(() => {
-		console.log('feed media item intersection element is', intersectionElement);
-	});
 </script>
 
-<!-- 	root={intersectionElement} -->
 <IntersectionObserver rootMargin={'-200px'} {element} bind:intersecting>
-	<div class={`inner-container carousel-item ${intersecting || 'hidden'}`} bind:this={element}>
+	<div class={`inner-container carousel-item ${!isCurrent ? 'hidden' : ''}`} bind:this={element}>
 		<div class="side-text">
 			<p>@lukashahnart</p>
 			<p>
@@ -35,15 +30,17 @@
 <style>
 	.hidden {
 		opacity: 0.2;
+		transform: scale(0.9);
 	}
 
 	.inner-container {
 		display: flex;
+		transition: all 0.4s;
 	}
 
 	.side-text {
 		font-family: 'Caprasimo', sans-serif;
-		font-size: 1.5rem;
+		font-size: calc(var(--image-width) * 0.06);
 		writing-mode: sideways-lr;
 		display: flex;
 		justify-content: space-between;

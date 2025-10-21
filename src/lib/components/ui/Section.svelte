@@ -4,7 +4,7 @@
 	let { title, children, alt = false, overflow = false } = $props();
 </script>
 
-<section class="page-section" style={overflow ? '' : 'max-width:50rem;'}>
+<section class="page-section" style={overflow ? '' : 'max-width:50rem; padding:1rem;'}>
 	<div class="header">
 		<h1>{title}</h1>
 		<WavyDivider direction={alt ? 'left' : 'right'} />
@@ -15,7 +15,7 @@
 <style lang="scss">
 	section {
 		width: 100%;
-		margin-bottom: 8rem;
+		margin-bottom: 10rem;
 	}
 
 	.header {

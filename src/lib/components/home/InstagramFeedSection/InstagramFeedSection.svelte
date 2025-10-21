@@ -21,14 +21,15 @@
 </Section>
 
 <div class="intersection-element-container">
-	<div id="intersection-element" bind:this={intersectionElement}></div>
+	<div id="intersection-element" bind:this={intersectionElement} hidden></div>
 </div>
 
 <style>
 	.posts-container {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: 4rem;
+		margin-top: 4rem;
 	}
 
 	.intersection-element-container {
