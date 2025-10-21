@@ -32,6 +32,11 @@
 		]
 	},
 	"dependencies": {
-		"instafeed.js": "^2.0.0"
+		"@braebo/pocket-shader": "npm:@jsr/braebo__pocket-shader@^0.3.1",
+		"instafeed.js": "^2.0.0",
+		"pocket": "^0.1.0",
+		"pocket-shader": "^0.3.1",
+		"svader": "^0.5.4",
+		"svelte-intersection-observer": "^1.0.0"
 	}
 }

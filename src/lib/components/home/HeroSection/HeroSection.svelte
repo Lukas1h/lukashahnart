@@ -1,8 +1,11 @@
-
+<script>
+	import WebGl from './WebGL.svelte';
+</script>
 
 <div id="hero">
-	<h1>lukashahn.art</h1>
-	<h2>photography/videography</h2>
+	<WebGl />
+	<!-- <h1>lukashahn.art</h1>
+	<h2>photography/videography</h2> -->
 </div>
 
 <style>
@@ -12,6 +15,13 @@
 		align-items: center;
 		justify-content: center;
 		height: calc(60vh);
+		width: 100%;
+		padding: 2rem;
+
+		#shader {
+			width: 100%;
+			height: 100%;
+		}
 
 		h1 {
 			text-align: center;

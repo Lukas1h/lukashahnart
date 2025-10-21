@@ -1,7 +1,7 @@
-<p><slot /></p>
+<div><slot /></div>
 
 <style>
-	p {
+	div {
 		font-family: 'Aleo', serif;
 		text-align: center;
 		font-size: 1.1rem;
