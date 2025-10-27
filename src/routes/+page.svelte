@@ -12,6 +12,64 @@
 	const { instagramPosts } = data.props;
 </script>
 
+<svelte:head>
+	<title>Professional Photography & Videography in Roseburg, Oregon | Lukas Hahn</title>
+
+	<meta
+		name="description"
+		content="Lukas Hahn is a professional photographer and videographer based in Roseburg, Oregon. Specializing in portraits, events, weddings, and creative visual storytelling across the Pacific Northwest."
+	/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.lukashahn.art/" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta
+		property="og:title"
+		content="Professional Photography & Videography in Roseburg, Oregon | Lukas Hahn"
+	/>
+	<meta
+		property="og:description"
+		content="Professional photography and videography services in Roseburg, Oregon. Capture your story with creativity and quality."
+	/>
+	<meta property="og:url" content="https://www.lukashahn.art/" />
+	<meta property="og:image" content="https://www.lukashahn.art/opengraph.png" />
+	<meta property="og:site_name" content="Lukas Hahn Photography & Videography" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Lukas Hahn | Photography & Videography in Roseburg, Oregon" />
+	<meta
+		name="twitter:description"
+		content="Capture your moments with creative photography and videography in Roseburg, Oregon and the Pacific Northwest."
+	/>
+	<meta name="twitter:image" content="https://www.lukashahn.art/opengraph.png" />
+
+	<!-- Schema.org Structured Data -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Lukas Hahn Photography & Videography",
+			"image": "https://www.lukashahn.art/opengraph.png",
+			"url": "https://www.lukashahn.art",
+			"telephone": "+1-541-XXX-XXXX",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "",
+				"addressLocality": "Roseburg",
+				"addressRegion": "OR",
+				"postalCode": "",
+				"addressCountry": "US"
+			},
+			"priceRange": "$$",
+			"sameAs": ["https://www.instagram.com/lukashahnart", "https://www.youtube.com/@lukashahnart"],
+			"description": "Professional photography and videography services based in Roseburg, Oregon — offering creative visuals for portraits, weddings, events, and businesses across the Pacific Northwest."
+		}
+	</script>
+</svelte:head>
+
 <main>
 	<HeroSection />
 
