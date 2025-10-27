@@ -54,7 +54,7 @@
 			"name": "Lukas Hahn Photography & Videography",
 			"image": "https://www.lukashahn.art/opengraph.png",
 			"url": "https://www.lukashahn.art",
-			"telephone": "+1-541-XXX-XXXX",
+			"telephone": "+1-541-430-3372",
 			"address": {
 				"@type": "PostalAddress",
 				"streetAddress": "",
