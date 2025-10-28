@@ -79,7 +79,8 @@ export async function load() {
     let token =
         'IGAAPZCoqVFCT9BZAFRQZAEFMUlpRa0tHTDRzeXI5WEw5aG5UZAk53ZADZAPaWFYS3lHeFN5VVBGS3ptb2I2QmQ3YzBIdDQyRUpXaFBVREZA6MFlibTFCdl90a2VBOXZAzYm9VSlJzcjRvNERIVEZAzeGtmQmV0RFk0N0pzZAWZAYejRSMkp3awZDZD';
 
-    let posts = await getInstagramPosts(token)
+    // let posts = await getInstagramPosts(token)//
+    let posts = []
 
 
 

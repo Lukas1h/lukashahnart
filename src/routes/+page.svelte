@@ -111,7 +111,7 @@
 
 	<ServicesSection />
 
-	<InstagramFeedSection posts={instagramPosts} />
+	<!-- <InstagramFeedSection posts={instagramPosts} /> -->
 
 	<!-- <section id="portfolio">
 		<h1>Portfolio</h1>
