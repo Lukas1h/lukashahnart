@@ -16,15 +16,15 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^4.0.0",
 		"@sveltejs/kit": "^2.48.2",
-		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"@sveltejs/vite-plugin-svelte": "^5.1.1",
 		"@types/instafeed.js": "^2.0.0",
-		"prettier": "^3.4.2",
-		"prettier-plugin-svelte": "^3.3.3",
-		"sass-embedded": "^1.86.3",
-		"svelte": "^5.0.0",
-		"svelte-check": "^4.0.0",
-		"typescript": "^5.0.0",
-		"vite": "^6.2.5"
+		"prettier": "^3.6.2",
+		"prettier-plugin-svelte": "^3.4.0",
+		"sass-embedded": "^1.93.2",
+		"svelte": "^5.43.0",
+		"svelte-check": "^4.3.3",
+		"typescript": "^5.9.3",
+		"vite": "^6.4.1"
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": [
@@ -33,10 +33,10 @@
 	},
 	"dependencies": {
 		"@braebo/pocket-shader": "npm:@jsr/braebo__pocket-shader@^0.3.1",
-		"instafeed.js": "^2.0.0",
+		"instafeed.js": "^2.1.0",
 		"pocket": "^0.1.0",
 		"pocket-shader": "^0.3.1",
-		"svader": "^0.5.4",
+		"svader": "^0.5.5",
 		"svelte-intersection-observer": "^1.0.0"
 	}
 }
