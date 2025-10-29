@@ -1,5 +1,4 @@
-// import { writeFile } from 'fs/promises';
-
+import { query } from '$app/server';
 
 
 const CACHE_DURATION = 60 * 60 * 1000; // 1 hour in milliseconds
@@ -23,7 +22,7 @@ async function getMediaById(token: string, id: string) {
     }
 }
 
-async function getInstagramPosts(token: string) {
+async function _getInstagramPosts(token: string) {
     const now = Date.now();
 
     if (
@@ -75,19 +74,11 @@ async function getInstagramPosts(token: string) {
 }
 
 
-export async function load() {
+export const getInstagramPosts = query(async () => {
     let token =
         'IGAAPZCoqVFCT9BZAFRQZAEFMUlpRa0tHTDRzeXI5WEw5aG5UZAk53ZADZAPaWFYS3lHeFN5VVBGS3ptb2I2QmQ3YzBIdDQyRUpXaFBVREZA6MFlibTFCdl90a2VBOXZAzYm9VSlJzcjRvNERIVEZAzeGtmQmV0RFk0N0pzZAWZAYejRSMkp3awZDZD';
 
-    // let posts = await getInstagramPosts(token)//
-    let posts = []
+    let posts = await _getInstagramPosts(token);
 
-
-
-
-    return {
-        props: {
-            instagramPosts: posts
-        }
-    };
-}
+    return posts
+});

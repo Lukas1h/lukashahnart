@@ -5,7 +5,9 @@
 	import Section from '$lib/components/ui/Section.svelte';
 	import WavyDivider from '$lib/components/ui/WavyDivider.svelte';
 	import { onMount } from 'svelte';
-	let { posts } = $props();
+	import { getInstagramPosts } from './InstagramFeedSection.remote';
+
+	let posts = await getInstagramPosts();
 
 	let intersectionElement = $state(undefined);
 </script>

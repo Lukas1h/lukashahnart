@@ -7,9 +7,6 @@
 	import ContactSection from '$lib/components/home/ContactSection';
 	import InstagramFeedSection from '$lib/components/home/InstagramFeedSection';
 	import ServicesSection from '$lib/components/home/ServicesSection';
-
-	let { data }: PageProps = $props();
-	const { instagramPosts } = data.props;
 </script>
 
 <svelte:head>
@@ -111,73 +108,7 @@
 
 	<ServicesSection />
 
-	<!-- <InstagramFeedSection posts={instagramPosts} /> -->
-
-	<!-- <section id="portfolio">
-		<h1>Portfolio</h1>
-		<hr />
-		<div class="portfolio-content">
-			<iframe
-				class="landscape"
-				src="https://www.youtube-nocookie.com/embed/VMK7k01P9Dc?si=cBA5xrZlsywVQK0T"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				referrerpolicy="strict-origin-when-cross-origin"
-				allowfullscreen
-			></iframe>
-			<iframe
-				class="landscape"
-				src="https://www.youtube.com/embed/cvpaMmWy62I?si=EQZp0o0vQdu16BKn"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				referrerpolicy="strict-origin-when-cross-origin"
-				allowfullscreen
-			></iframe>
-			<iframe
-				class="landscape"
-				src="https://www.youtube.com/embed/S5i9EJA9T9w?si=jEFNDNIRXVS8iwo_"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				referrerpolicy="strict-origin-when-cross-origin"
-				allowfullscreen
-			></iframe>
-			<iframe
-				class="portrait"
-				src="https://www.youtube.com/embed/7fsFR22xYRA?si=rguZZTjfRYfNlgtf"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				referrerpolicy="strict-origin-when-cross-origin"
-				allowfullscreen
-			></iframe>
-			<iframe
-				class="portrait"
-				src="https://www.youtube.com/embed/Ve3uSnPAUX8?si=5tckSgpxrhkV7M3o"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				referrerpolicy="strict-origin-when-cross-origin"
-				allowfullscreen
-			></iframe>
-		</div>
-		{#each categories as category}
-			<section class="portfolio-category">
-				<header>
-					<h2>{category.category}</h2>
-					<h3>{category.description}</h3>
-				</header>
-
-				<div class="portfolio-content">
-					{#each category.images as image}
-						<img src={image.url} alt="" loading="lazy" />
-					{/each}
-				</div>
-			</section>
-		{/each}
-	</section> -->
+	<InstagramFeedSection />
 </main>
 
 <style lang="scss">

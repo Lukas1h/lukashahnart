@@ -15,7 +15,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^4.0.0",
-		"@sveltejs/kit": "^2.16.0",
+		"@sveltejs/kit": "^2.48.2",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@types/instafeed.js": "^2.0.0",
 		"prettier": "^3.4.2",
