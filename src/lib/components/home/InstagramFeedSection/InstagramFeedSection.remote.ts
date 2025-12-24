@@ -74,9 +74,11 @@ async function _getInstagramPosts(token: string) {
 }
 
 
+//https://developers.facebook.com/apps/3174528696034637/instagram-business/API-Setup/?business_id=1355265808736959
+
 export const getInstagramPosts = query(async () => {
     let token =
-        'IGAAPZCoqVFCT9BZAFRQZAEFMUlpRa0tHTDRzeXI5WEw5aG5UZAk53ZADZAPaWFYS3lHeFN5VVBGS3ptb2I2QmQ3YzBIdDQyRUpXaFBVREZA6MFlibTFCdl90a2VBOXZAzYm9VSlJzcjRvNERIVEZAzeGtmQmV0RFk0N0pzZAWZAYejRSMkp3awZDZD';
+        'IGAAPZCoqVFCT9BZAGJwRHlnYzFwd3c0V0ctTmYxaVhyYll3c082U2FMdF9JU042UkZAmTzlGejZAvcnhOR0lsOFVUOTQ1WnNnNTN4MnViMXA3M2lkZAnAwUlZAxQk9SVjdHaWd0azZANbUl6RXVPRHpuWU5XZAHF3SkRyMnI3RWlVVlh4YwZDZD';
 
     let posts = await _getInstagramPosts(token);
 
