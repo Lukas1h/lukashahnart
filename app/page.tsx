@@ -4,7 +4,6 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col font-sans ">
 
-      <Header></Header>
 
 
       {/* Hero */}
@@ -391,7 +390,7 @@ export default function Home() {
             </div>
 
             <p className="text-xl font-outfit ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Professional video content created for businesses, creators, athletes, musicians, and local organizations. Projects range from short-form social media content and podcasts to cinematic interviews, promotional campaigns, sports edits, and behind-the-scenes coverage designed to help brands stand out online.
             </p>
 
             <div>
@@ -445,6 +444,122 @@ export default function Home() {
 
 
 
+      </div>
+
+      <div className="w-full mt-16">
+        <div className="max-w-4xl h-full mx-auto p-4 pb-32">
+
+          <div className="pt-20 pb-12">
+            <div className="-mt-40 mb-40 h-0" id="contact"></div>
+            <h2 className="font-semibold text-[4rem] text-[#403933] font-outfit tracking-tight text-center leading-18">
+              Contact
+            </h2>
+
+            <h3 className="font-medium text-[2rem] text-[#403933] font-outfit tracking-tight leading-10 text-center max-w-2xl mx-auto mt-4">
+              Let’s talk about your next website, video project, or content campaign.
+            </h3>
+          </div>
+
+          <div className="bg-[#F2EBE8] rounded-[2rem] p-8 md:p-12 shadow-xl flex flex-col md:flex-row gap-10">
+
+            <div className="flex-1">
+              <p className="text-[#D18601] font-semibold uppercase tracking-[0.2em] font-outfit text-sm mb-3">
+                Get In Touch
+              </p>
+
+              <h3 className="text-[2.5rem] leading-11 font-semibold tracking-tight text-[#403933] font-outfit mb-4">
+                Ready to build something professional?
+              </h3>
+
+              <p className="text-lg font-outfit text-[#403933] opacity-80 max-w-md">
+                Whether you need a custom website, social media content, business photography, or video production, I’d love to hear about your project.
+              </p>
+
+              <div className="flex flex-col gap-2 mt-10 font-outfit text-lg">
+                <div>
+                  <p className="text-sm   text-[#403933] opacity-50">
+                    Email
+                  </p>
+                  <p className="font-medium text-[#403933]">hello@lukashahn.art</p>
+                </div>
+                <div>
+                  <p className="text-sm   text-[#403933] opacity-50">
+                    Phone
+                  </p>
+                  <p className="font-medium text-[#403933]">
+                    +1 541 430 3372
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-sm   text-[#403933] opacity-50">
+                    Location
+                  </p>
+                  <p className="font-medium text-[#403933]">Roseburg & Eugene, Oregon</p>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div className="flex-1">
+              <form
+                action="https://formsubmit.co/hello@lukashahn.art"
+                method="POST"
+                className="flex flex-col gap-5"
+              >
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_subject" value="New Submission" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value="http://localhost:3000/thanks"></input>
+
+                <div>
+                  <label className="block text-sm font-outfit  text-[#403933] opacity-60 mb-1">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                    className="w-full rounded-md bg-white px-5 py-4 font-outfit text-lg outline-none border border-transparent focus:border-[#D18601] transition"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-outfit  text-[#403933] opacity-60 mb-1">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                    className="w-full rounded-md bg-white px-5 py-4 font-outfit text-lg outline-none border border-transparent focus:border-[#D18601] transition"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-outfit  text-[#403933] opacity-60 mb-1">
+                    Project Details
+                  </label>
+                  <textarea
+                    name="message"
+                    placeholder="Tell me a little about your project..."
+                    required
+                    rows={6}
+                    className="w-full rounded-md bg-white px-5 py-4 font-outfit text-lg outline-none border border-transparent focus:border-[#D18601] transition resize-none"
+                  />
+                </div>
+
+                <button className="bg-[#403933] text-white rounded-2xl px-8 py-4 text-lg font-outfit font-medium hover:opacity-90 transition w-full md:w-fit">
+                  Send Inquiry
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   );

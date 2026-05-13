@@ -4,7 +4,7 @@ import "./header-cta.css"
 export default function HeaderCTA() {
     return (
         <>
-            <a href={"#sign-up"} className="header-cta  font-crete-round tracking-tighter text-[1.8rem] md:text-[2rem] italic -mr-4">Contact
+            <a href={"/#contact"} className="header-cta  font-crete-round tracking-tighter text-[1.8rem] md:text-[2rem] italic -mr-4">Contact
 
                 <svg viewBox="0 0 42 37" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline ml-2 header-cta-icon h-[1.8rem] sm:h-8" style={{ filter: "drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.2))" }}>
                     <path d="M24.4929 6.64473C24.291 6.45096 23.972 6.45171 23.771 6.64642L21.4615 8.88389C21.2499 9.08888 21.2507 9.42853 21.4632 9.63253L28.1598 16.0598H7.01957C6.73217 16.0598 6.49927 16.2929 6.49957 16.5803L6.50286 19.7189C6.50316 20.0059 6.73588 20.2383 7.02286 20.2383L28.0833 20.2383L21.5044 26.6119C21.2928 26.8169 21.2936 27.1566 21.5061 27.3606L23.8268 29.5877C24.0287 29.7815 24.3477 29.7807 24.5487 29.586L34.4798 19.9648C35.5377 18.9399 35.5338 17.2416 34.471 16.2216L24.4929 6.64473Z" fill="#D18601" />
