@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.header-nav-link {
+
+    -webkit-text-stroke: 15.5px #F9F4F1;
+    paint-order: stroke fill;
+    /* color: #A37D53; */
+    color: #A37D53;
+    text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: color 80ms;
+}
+
+
+/* Webkit doesn't like my shadows so we've gotta change it. */
+@supports (-webkit-hyphens: none) {
+    .header-nav-link {
+        text-shadow: 0px 0.1px 0.5rem rgba(0, 0, 0, 0.05);
+    }
+}
+
+.header-nav-link:hover {
+
+    color: #403933;
+    transition: none;
+}
+
+.header-nav-link:active {
+    opacity: 0.8;
+}

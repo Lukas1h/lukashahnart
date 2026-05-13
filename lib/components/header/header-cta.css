@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+.header-cta {
+    display: inline-block;
+    -webkit-text-stroke: 15.5px #F9F4F1;
+    paint-order: stroke fill;
+    color: #D18601;
+    text-shadow: 0px 5px 25px #ffaf2687, 0px 10px 25px #ffaf2687;
+    transition: all;
+    transition-duration: 200ms;
+    -webkit-touch-callout: none;
+}
+
+/* Webkit doesn't like my shadows so we've gotta change it. */
+@supports (-webkit-hyphens: none) {
+    .header-cta {
+        text-shadow: 0px 0.1px 0.5rem rgba(0, 0, 0, 0.05);
+    }
+}
+
+
+.header-cta-icon {
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.header-cta:active {
+    opacity: 0.8;
+}
+
+.header-cta:hover {
+    transform: translateX(4px);
+    transition-duration: 60ms;
+}
+
+.header-cta:hover .header-cta-icon {
+    transform: translateX(-2px);
+    transition-duration: 60ms;
+}
+
+@media (max-width: 768px) {
+    .header-cta:hover {
+        transform: none;
+    }
+
+    .header-cta:hover .header-cta-icon {
+        transform: none;
+    }
+
+
+}

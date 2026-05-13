@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.header-logo {
+
+    -webkit-text-stroke: 15.5px #F9F4F1;
+    paint-order: stroke fill;
+    color: #D18601;
+    text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+
+}
+
+/* Webkit doesn't like my shadows so we've gotta change it. */
+@supports (-webkit-hyphens: none) {
+    .header-logo {
+        text-shadow: 0px 0.1px 0.5rem rgba(0, 0, 0, 0.05);
+    }
+}
