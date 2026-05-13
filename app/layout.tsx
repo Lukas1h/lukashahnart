@@ -26,11 +26,11 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "lukashahn.art | Web / Media For Roseburg And Eugene Businesses",
-  description: "Websites and media creation for local businesses in Roseburg and Eugene area. Services including building and designing websites, promotinal videos, product photos, social media management.",
+  description: "Websites and media creation for local businesses in Roseburg and Eugene area. Services including building and designing websites, promotional videos, product photos, social media management.",
   openGraph: {
     images: ["/opengraph.png"],
     title: "lukashahn.art | Websites and Media for Local Roseburg and Eugene Businesses",
-    description: "Websites and media creation for local businesses in Roseburg and Eugene area. Services including building and designing websites, promotinal videos, product photos, social media management.",
+    description: "Websites and media creation for local businesses in Roseburg and Eugene area. Services including building and designing websites, promotional videos, product photos, social media management.",
   }
 };
 
