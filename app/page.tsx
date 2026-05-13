@@ -7,13 +7,6 @@ export default function Home() {
       <Header></Header>
 
 
-      {/* Scroll Fade Mask
-      <div className="fixed inset-0 min-h-screen flex flex-col font-sans z-10 ">
-        <div className="fixed top-0 right-0 left-0 h-17.75 bg-[linear-gradient(180deg,#F9F4F1_17.31%,rgba(255,255,255,0)_100%)]"></div>
-        <div className="fixed bottom-0 right-0 left-0 h-17.75 bg-[linear-gradient(0deg,#F9F4F1_17.31%,rgba(255,255,255,0)_100%)]"></div>
-      </div> */}
-
-
       {/* Hero */}
       <main className="z-0 h-[95vh] flex items-center justify-center  -mt-24 relative">
 
@@ -53,7 +46,7 @@ export default function Home() {
         </div>
       </main>
 
-
+      {/* Services */}
       <div className="bg-[#F2EBE8] w-full">
         <div className="max-w-4xl h-full mx-auto p-4">
           <div className="-mt-40 mb-40 h-0" id="services"></div>
@@ -283,7 +276,7 @@ export default function Home() {
 
           </div>
 
-          <hr className="mt-20 mb-16 border-[1px] border-[#403933] rounded-full opacity-30" />
+          <hr className="mt-20 mb-16 border border-[#403933] rounded-full opacity-30" />
 
           {/* Calvary Christian Academy */}
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto gap-6">
@@ -341,7 +334,7 @@ export default function Home() {
 
           </div>
 
-          <hr className="mt-20 mb-16 border-[1px] border-[#403933] rounded-full opacity-30" />
+          <hr className="mt-20 mb-16 border border-[#403933] rounded-full opacity-30" />
 
           {/* Statewide Exhaust */}
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto gap-6">
@@ -375,7 +368,83 @@ export default function Home() {
           </div>
 
 
+          <hr className="mt-20 mb-16 border border-[#403933] rounded-full opacity-30" />
+
+          {/* Video Work */}
+          <div className="flex flex-col items-center text-center max-w-3xl mx-auto gap-6">
+            <h3 className="font-semibold text-[2.3rem] text-[#403933] font-outfit tracking-tight leading-10 text-center">
+              Video Work
+            </h3>
+            <div className="flex flex-wrap justify-center gap-3 font-outfit">
+              <span className="bg-[#E6DDD8] px-4 py-2 rounded-full">
+                Short Form
+              </span>
+              <span className="bg-[#E6DDD8] px-4 py-2 rounded-full">
+                Interviews
+              </span>
+              <span className="bg-[#E6DDD8] px-4 py-2 rounded-full">
+                Event Coverage
+              </span>
+              <span className="bg-[#E6DDD8] px-4 py-2 rounded-full">
+                Podcasts
+              </span>
+            </div>
+
+            <p className="text-xl font-outfit ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <div>
+
+              <img src="/media/video/brandon_still_2.jpg" alt="" className=" inline-block shadow-2xl rounded-md m-1 " />
+              <div className=" flex-col w-[48%] inline-flex">
+                <img src="/media/video/podcast_1.2.1.jpg" alt="" className="inline-block shadow-2xl rounded-md m-1 " />
+                <img src="/media/video/podcast_viewfinder.jpeg" alt="" className="inline-block shadow-2xl rounded-md m-1 " />
+
+              </div>
+              <img src="/media/video/podcast_bts.jpg" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/video/james.png" alt="" className=" inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/video/mens_still_1.1.1.jpg" alt="" className=" inline-block shadow-2xl rounded-md m-1 " />
+
+
+
+
+            </div>
+
+          </div>
+
+
         </div>
+      </div>
+
+      <div className="bg-[#F2EBE8] w-full mt-16">
+        <div className="max-w-4xl h-full mx-auto p-4 pb-50">
+
+          <div className="p-20">
+            <div className="-mt-40 mb-40 h-0" id="testimonials"></div>
+            <h2 className="font-semibold text-[4rem] text-[#403933] font-outfit tracking-tight  text-center leading-18">Testimonials</h2>
+            <h3 className="font-medium text-[2.3rem] text-[#403933] font-outfit tracking-tight leading-10 text-center">
+              Read what others have to say about our work.
+            </h3>
+          </div>
+
+
+
+          <div className="flex flex-col items-center">
+            <p className="max-w-2xl text-center font-outfit text-3xl leading-8 italic">
+              &ldquo;Lukas has done an excellent job for me every time I needed video content
+              for my social media and branding for my music project. He is always a good
+              hang, collaborative, creative, and gets high quality content done in a timely
+              fashion.&rdquo;
+            </p>
+            <p className="font-outfit text-[#403933] text-[1.2rem] mt-4 text-center leading-4">—<span className="font-semibold text-xl">Brandon Plumblee</span><br />Artist, songwriter and musician from Roseburg.</p>
+          </div>
+
+
+        </div>
+
+
+
       </div>
     </div>
   );
