@@ -303,15 +303,11 @@ export default function Home() {
             </div>
 
             <p className="text-xl font-outfit ">
-              Golden Morning is a local, family-owned flower farm and florist focused on
-              seasonal arrangements, community events, and curated floral experiences.
+              Calvary Christian Academy is a private K–12 Christian school in Roseburg focused on Christ-centered education, strong academics, and building meaningful relationships between students, teachers, and families. The school emphasizes character development, small class sizes, and creating a safe, welcoming environment for students to grow.
             </p>
 
             <p className="text-xl font-outfit ">
-              The brand was built from the ground up, including logo design, business
-              cards, stickers, and a custom website with an integrated online market.
-              Supporting media was also created, including promotional photography and
-              short-form video content for social media and marketing campaigns.
+              For this project, a completely custom website was designed and developed from the ground up for CCA. The site includes admissions forms, faculty and teacher bios, an updateable school calendar, slideshows, and dedicated pages for academics, testimonials, employment opportunities, and school information. In addition to the website, professional photography and cinematic drone footage were captured to help showcase the campus, classrooms, and student life throughout the site.
             </p>
             <div>
 
