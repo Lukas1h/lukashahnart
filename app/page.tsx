@@ -54,7 +54,7 @@ export default function Home() {
 
           {/* Custom Built Websites */}
           <div className="flex gap-4 mt-20 flex-col md:flex-row">
-            <img src={"/media/custom-websites.svg"} className="flex-1  h-100 "></img>
+            <img src={"/media/custom-websites.webp"} className="flex-1  h-100 "></img>
 
 
 
@@ -102,7 +102,7 @@ export default function Home() {
 
           {/* Video Services */}
           <div className="flex gap-4 mt-20 flex-col md:flex-row">
-            <img src={"/media/video-services.svg"} className="md:hidden"></img>
+            <img src={"/media/video-services.webp"} className="md:hidden"></img>
             <div className="flex-1">
               <h3 className="text-3xl font-outfit tracking-tight font-semibold text-[#403933] mb-1">
                 Video Services
@@ -139,12 +139,12 @@ export default function Home() {
               </div>
             </div>
 
-            <img src={"/media/video-services.svg"} className="flex-1  h-100 hidden md:block"></img>
+            <img src={"/media/video-services.webp"} className="flex-1  h-100 hidden md:block"></img>
           </div>
 
           {/* Photo Shoots */}
           <div className="flex gap-4 mt-20 pb-20 flex-col md:flex-row">
-            <img src={"/media/photo-services.svg"} className="flex-1  h-100 "></img>
+            <img src={"/media/photo-services.webp"} className="flex-1  h-100 "></img>
 
             <div className="flex-1">
               <h3 className="text-3xl font-outfit tracking-tight font-semibold text-[#403933] mb-1">
@@ -236,10 +236,10 @@ export default function Home() {
             <div>
               <img src="/media/websites/gm/gm_logo.svg" alt="" className="h-24 inline-block p-2" />
               <img src="/media/websites/gm/gm.svg" alt="" className="h-24 inline-block p-2" />
-              <img src="/media/websites/gm/gm.png" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
-              <img src="/media/websites/gm/gm_market.png" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
-              <img src="/media/websites/gm/flower1.jpg" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
-              <img src="/media/websites/gm/market.jpg" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
+              <img src="/media/websites/gm/gm.webp" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
+              <img src="/media/websites/gm/gm_market.webp" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
+              <img src="/media/websites/gm/flower1.webp" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
+              <img src="/media/websites/gm/market.webp" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
             </div>
 
           </div>
@@ -280,18 +280,18 @@ export default function Home() {
             </p>
             <div>
 
-              <img src="/media/websites/cca/page1.png" alt="" className=" inline-block shadow-2xl rounded-md m-1 " />
-              <img src="/media/websites/cca/page2.png" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
-              <img src="/media/websites/cca/page3.png" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
-              <img src="/media/websites/cca/grad.png" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
-              <img src="/media/websites/cca/page4.png" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/websites/cca/page1.webp" alt="" className=" inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/websites/cca/page2.webp" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/websites/cca/page3.webp" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/websites/cca/grad.webp" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/websites/cca/page4.webp" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
 
-              <img src="/media/websites/cca/kid.jpg" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
-              <img src="/media/websites/cca/fitness.jpg" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
-              <img src="/media/websites/cca/travis.jpg" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
-              <img src="/media/websites/cca/class.jpg" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
-              <img src="/media/websites/cca/fitness2.jpg" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
-              <img src="/media/websites/cca/chapel.jpg" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/websites/cca/kid.webp" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/websites/cca/fitness.webp" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/websites/cca/travis.webp" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/websites/cca/class.webp" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/websites/cca/fitness2.webp" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/websites/cca/chapel.webp" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
 
 
             </div>
@@ -326,7 +326,7 @@ export default function Home() {
             <div>
 
               <img src="/media/websites/statewide/statewide.png" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
-              <img src="/media/websites/statewide/statewide2.png" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
+              <img src="/media/websites/statewide/statewide2.webp" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
             </div>
 
           </div>
@@ -360,15 +360,15 @@ export default function Home() {
 
             <div>
 
-              <img src="/media/video/brandon_still_2.jpg" alt="" className=" inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/video/brandon_still_2.webp" alt="" className=" inline-block shadow-2xl rounded-md m-1 " />
               <div className=" flex-col w-[48%] inline-flex">
-                <img src="/media/video/podcast_1.2.1.jpg" alt="" className="inline-block shadow-2xl rounded-md m-1 " />
-                <img src="/media/video/podcast_viewfinder.jpeg" alt="" className="inline-block shadow-2xl rounded-md m-1 " />
+                <img src="/media/video/podcast_1.2.1.webp" alt="" className="inline-block shadow-2xl rounded-md m-1 " />
+                <img src="/media/video/podcast_viewfinder.webp" alt="" className="inline-block shadow-2xl rounded-md m-1 " />
 
               </div>
-              <img src="/media/video/podcast_bts.jpg" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
-              <img src="/media/video/james.png" alt="" className=" inline-block shadow-2xl rounded-md m-1 " />
-              <img src="/media/video/mens_still_1.1.1.jpg" alt="" className=" inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/video/podcast_bts.webp" alt="" className="w-[48%] inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/video/james.webp" alt="" className=" inline-block shadow-2xl rounded-md m-1 " />
+              <img src="/media/video/mens_still_1.1.1.webp" alt="" className=" inline-block shadow-2xl rounded-md m-1 " />
 
 
 
