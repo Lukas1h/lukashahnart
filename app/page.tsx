@@ -13,7 +13,7 @@ export default function Home() {
         <div className="flex-col flex-1 items-center justify-center text-center px-6 z-10 max-w-3xl p-4 w-100%">
           <div className="max-w-screen mx-auto">
 
-            <p className=" font-extrabold font-serif tracking-tighter text-[2.5rem] leading-2 md:text-[4.5rem] md:leading-4 mb-6 text-[#D18601]">lukashahn.art</p>
+            <p className=" font-extrabold font-crete-round tracking-tighter text-[2.5rem] leading-2 md:text-[4.5rem] md:leading-4 mb-6 text-[#D18601]">lukashahn.art</p>
             <h2 className="font-semibold  text-[1.2rem] leading-5 md:text-[2.3rem] md:leading-10  text-[#403933] font-outfit tracking-tight ">
               Websites and media creation for local businesses in <span className="text-[#D18601]">Roseburg</span> and <span className="text-[#D18601]">Eugene</span> area.
             </h2>
@@ -392,9 +392,18 @@ export default function Home() {
             </h3>
           </div>
 
-
-
           <div className="flex flex-col items-center">
+            <p className="max-w-2xl text-center font-outfit text-xl leading-6 md:text-3xl md:leading-8 italic">
+              &ldquo;Lukas designed our school website and the process was wonderful.
+              He listened carefully to our needs,creatively suggested solutions,
+              and quickly provided exactly what we needed. If you need a website, blog,
+              or custom solution, I wholeheartedly recommend Lukas Hahn&rdquo;
+            </p>
+            <p className="font-outfit text-[#403933] text-[1.2rem] mt-4 text-center leading-4">—<span className="font-semibold text-xl">Mark Vickers Ph.D.</span><br />Former Principal, Calvary Christian Academy</p>
+          </div>
+
+
+          <div className="flex flex-col items-center  pt-20">
             <p className="max-w-2xl text-center font-outfit text-xl leading-6 md:text-3xl md:leading-8 italic">
               &ldquo;Lukas has done an excellent job for me every time I needed video content
               for my social media and branding for my music project. He is always a good
@@ -403,6 +412,7 @@ export default function Home() {
             </p>
             <p className="font-outfit text-[#403933] text-[1.2rem] mt-4 text-center leading-4">—<span className="font-semibold text-xl">Brandon Plumblee</span><br />Artist, songwriter and musician from Roseburg.</p>
           </div>
+
 
 
         </div>
@@ -425,14 +435,14 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="bg-[#F2EBE8] rounded-[2rem] p-8 md:p-12 shadow-xl flex flex-col-reverse md:flex-row gap-10">
+          <div className="bg-[#F2EBE8] rounded-[2rem] p-8 md:p-12 flex flex-col-reverse md:flex-row gap-10 border-4 border-[#D1860155]">
 
             <div className="flex-1">
               <p className="text-[#D18601] font-semibold uppercase tracking-[0.2em] font-outfit text-sm mb-3  hidden md:block">
                 Get In Touch
               </p>
 
-              <h3 className="text-[2.5rem] leading-11 font-semibold tracking-tight text-[#403933] font-outfit mb-4 hidden md:block">
+              <h3 className="text-[2.5rem] leading-9 font-semibold tracking-tight text-[#403933] font-outfit mb-4 hidden md:block">
                 Ready to build something professional?
               </h3>
 
@@ -445,7 +455,7 @@ export default function Home() {
                   <p className="text-sm   text-[#403933] opacity-50">
                     Email
                   </p>
-                  <p className="font-medium text-[#403933]">hello@lukashahn.art</p>
+                  <p className="font-medium text-[#403933]">lukas@lukashahn.art</p>
                 </div>
                 <div>
                   <p className="text-sm   text-[#403933] opacity-50">
@@ -469,14 +479,17 @@ export default function Home() {
 
             <div className="flex-1">
               <form
-                action="https://formsubmit.co/hello@lukashahn.art"
+                action="https://api.web3forms.com/submit"
                 method="POST"
                 className="flex flex-col gap-5"
               >
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_subject" value="New Submission" />
-                <input type="hidden" name="_template" value="table" />
-                <input type="hidden" name="_next" value="http://localhost:3000/thanks"></input>
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="76fb51e4-bfef-47ce-87c7-d8862570713a"
+                />
+                <input type="hidden" name="subject" value="New Submission" />
+                <input type="hidden" name="redirect" value="https://lukashahn.art/thanks"></input>
 
                 <div>
                   <label className="block text-sm font-outfit  text-[#403933] opacity-60 mb-1">
@@ -487,7 +500,7 @@ export default function Home() {
                     name="name"
                     placeholder="Your name"
                     required
-                    className="w-full rounded-md bg-white px-5 py-4 font-outfit text-lg outline-none border border-transparent focus:border-[#D18601] transition"
+                    className="w-full rounded-md bg-white px-5 py-4 font-outfit text-lg outline-none border-2 border-transparent focus:border-[#D18601] transition"
                   />
                 </div>
 
@@ -500,7 +513,7 @@ export default function Home() {
                     name="email"
                     placeholder="you@example.com"
                     required
-                    className="w-full rounded-md bg-white px-5 py-4 font-outfit text-lg outline-none border border-transparent focus:border-[#D18601] transition"
+                    className="w-full rounded-md bg-white px-5 py-4 font-outfit text-lg outline-none border-2 border-transparent focus:border-[#D18601] transition"
                   />
                 </div>
 
@@ -513,11 +526,11 @@ export default function Home() {
                     placeholder="Tell me a little about your project..."
                     required
                     rows={6}
-                    className="w-full rounded-md bg-white px-5 py-4 font-outfit text-lg outline-none border border-transparent focus:border-[#D18601] transition resize-none"
+                    className="w-full rounded-md bg-white px-5 py-4 font-outfit text-lg outline-none border-2 border-transparent focus:border-[#D18601] transition resize-none"
                   />
                 </div>
 
-                <button className="bg-[#403933] text-white rounded-2xl px-8 py-4 text-lg font-outfit font-medium hover:opacity-90 transition w-full md:w-fit">
+                <button className="bg-[#D18601] text-white rounded-2xl px-8 py-4 text-xl font-crete-round hover:opacity-90 transition w-full font-semibold">
                   Send Inquiry
                 </button>
               </form>
