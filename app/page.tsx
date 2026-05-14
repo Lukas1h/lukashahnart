@@ -38,8 +38,8 @@ export default function Home() {
         </div>
 
         <div className="absolute flex flex-col justify-between inset-0 pointer-events-none hero-backgound">
-          <img src="/dashes-top-desktop.svg" className="hidden sm:block" />
-          <img src="/dashes-bottom-desktop.svg" className="hidden sm:block" />
+          <img src="/dashes-top-desktop.svg" alt="" className="hidden sm:block" />
+          <img src="/dashes-bottom-desktop.svg" alt="" className="hidden sm:block" />
           <img src="/dashes-top-mobile.svg" alt="" className="block sm:hidden" />
           <img src="/dashes-bottom-mobile.svg" alt="" className="block sm:hidden" />
         </div>
@@ -54,7 +54,7 @@ export default function Home() {
 
           {/* Custom Built Websites */}
           <div className="flex gap-4 mt-20 flex-col md:flex-row">
-            <img src={"/media/custom-websites.webp"} className="flex-1  h-100 "></img>
+            <img src={"/media/custom-websites.webp"} className="flex-1  h-100 " alt="Example of custom websites." ></img>
 
 
 
@@ -102,7 +102,7 @@ export default function Home() {
 
           {/* Video Services */}
           <div className="flex gap-4 mt-20 flex-col md:flex-row">
-            <img src={"/media/video-services.webp"} className="md:hidden"></img>
+            <img src={"/media/video-services.webp"} className="md:hidden" alt="Example of video services."></img>
             <div className="flex-1">
               <h3 className="text-3xl font-outfit tracking-tight font-semibold text-[#403933] mb-1">
                 Video Services
@@ -139,12 +139,12 @@ export default function Home() {
               </div>
             </div>
 
-            <img src={"/media/video-services.webp"} className="flex-1  h-100 hidden md:block"></img>
+            <img src={"/media/video-services.webp"} className="flex-1  h-100 hidden md:block" alt="Example of video services."></img>
           </div>
 
           {/* Photo Shoots */}
           <div className="flex gap-4 mt-20 pb-20 flex-col md:flex-row">
-            <img src={"/media/photo-services.webp"} className="flex-1  h-100 "></img>
+            <img src={"/media/photo-services.webp"} className="flex-1  h-100 " alt="Example of photo services."></img>
 
             <div className="flex-1">
               <h3 className="text-3xl font-outfit tracking-tight font-semibold text-[#403933] mb-1">
@@ -234,12 +234,12 @@ export default function Home() {
               short-form video content for social media and marketing campaigns.
             </p>
             <div>
-              <img src="/media/websites/gm/gm_logo.svg" alt="" className="h-24 inline-block p-2" />
-              <img src="/media/websites/gm/gm.svg" alt="" className="h-24 inline-block p-2" />
-              <img src="/media/websites/gm/gm.webp" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
-              <img src="/media/websites/gm/gm_market.webp" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
-              <img src="/media/websites/gm/flower1.webp" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
-              <img src="/media/websites/gm/market.webp" alt="" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
+              <img src="/media/websites/gm/gm_logo.svg" alt="Golden Morning Icon" className="h-24 inline-block p-2" />
+              <img src="/media/websites/gm/gm.svg" alt="Golden Morning Logo" className="h-24 inline-block p-2" />
+              <img src="/media/websites/gm/gm.webp" alt="Golden Morning Website Page 1" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
+              <img src="/media/websites/gm/gm_market.webp" alt="Golden Morning Website Page 2" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
+              <img src="/media/websites/gm/flower1.webp" alt="Golden Morning brading example." className="w-[48%] inline-block shadow-xl rounded-md m-1" />
+              <img src="/media/websites/gm/market.webp" alt="Golden Morning branding example." className="w-[48%] inline-block shadow-xl rounded-md m-1" />
             </div>
 
           </div>
@@ -250,7 +250,7 @@ export default function Home() {
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto gap-6">
             <img
               src="/media/websites/cca/logo.svg"
-              alt="Golden Morning project"
+              alt="CCA project"
               className="max-w-50 w-full"
             />
             <h3 className="font-semibold text-[2.3rem] text-[#403933] font-outfit tracking-tight leading-10 text-center">
@@ -304,7 +304,7 @@ export default function Home() {
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto gap-6">
             <img
               src="/media/websites/statewide/statewide.webp"
-              alt="Golden Morning project"
+              alt="Statewide Exhaust project"
               className="max-w-2xl w-full"
             />
             <div className="flex flex-wrap justify-center gap-3 font-outfit -mt-2">
