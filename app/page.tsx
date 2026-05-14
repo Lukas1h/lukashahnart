@@ -59,7 +59,7 @@ export default function Home() {
 
 
             <div className="flex-1">
-              <h3 className="text-3xl font-outfit tracking-tight font-medium text-[#403933] mb-1">
+              <h3 className="text-3xl font-outfit tracking-tight font-semibold text-[#403933] mb-1">
                 Custom Built Websites
               </h3>
 
@@ -74,6 +74,10 @@ export default function Home() {
                 Website projects can include custom design, mobile optimization, SEO
                 basics, landing pages, portfolio websites, business sites, and ongoing
                 maintenance when needed.
+              </p>
+
+              <p className="text-lg font-outfit mt-4 font-semibold">
+                Starting at $599.
               </p>
 
               <div className="flex flex-wrap gap-3 mt-6 font-outfit ">
@@ -100,7 +104,7 @@ export default function Home() {
           <div className="flex gap-4 mt-20 flex-col md:flex-row">
             <img src={"/media/video-services.svg"} className="md:hidden"></img>
             <div className="flex-1">
-              <h3 className="text-3xl font-outfit tracking-tight font-medium text-[#403933] mb-1">
+              <h3 className="text-3xl font-outfit tracking-tight font-semibold text-[#403933] mb-1">
                 Video Services
               </h3>
 
@@ -110,6 +114,11 @@ export default function Home() {
                 coverage, interviews, podcasts, sports edits, and cinematic highlight
                 videos tailored to your audience.
               </p>
+              <p className="text-lg font-outfit mt-4 font-semibold">
+                Starting at $99.
+              </p>
+
+
 
               <div className="flex flex-wrap gap-3 mt-6 font-outfit">
                 <span className="bg-[#E6DDD8] px-4 py-2 rounded-full">
@@ -138,7 +147,7 @@ export default function Home() {
             <img src={"/media/photo-services.svg"} className="flex-1  h-100 "></img>
 
             <div className="flex-1">
-              <h3 className="text-3xl font-outfit tracking-tight font-medium text-[#403933] mb-1">
+              <h3 className="text-3xl font-outfit tracking-tight font-semibold text-[#403933] mb-1">
                 Photo Shoots
               </h3>
 
@@ -146,6 +155,9 @@ export default function Home() {
                 Photo sessions for senior portraits, business branding photos,
                 sports photography, events, product photography, and content for social
                 media or websites.
+              </p>
+              <p className="text-lg font-outfit mt-4 font-semibold">
+                Starting at $99.
               </p>
 
               <div className="flex flex-wrap gap-3 mt-6 font-outfit">
