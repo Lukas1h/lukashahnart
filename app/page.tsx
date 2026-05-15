@@ -193,7 +193,7 @@ export default function Home() {
             <div className="-mt-40 mb-40 h-0" id="portfolio"></div>
             <h2 className="font-semibold  text-[#403933] font-outfit tracking-tight  text-center text-[2.4rem] leading-12 md:leading-18 md:text-[4rem]">Featured Projects</h2>
             <h3 className="font-medium  text-[#403933] font-outfit tracking-tight text-[1.4rem] leading-6 md:leading-10 md:text-[2.3rem] text-center">
-              See how we help local business and individuals grow their media presense.
+              See how I help local business and individuals grow their media presence.
             </h3>
           </div>
 
@@ -238,7 +238,7 @@ export default function Home() {
               <img src="/media/websites/gm/gm.svg" alt="Golden Morning Logo" className="h-24 inline-block p-2" />
               <img src="/media/websites/gm/gm.webp" alt="Golden Morning Website Page 1" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
               <img src="/media/websites/gm/gm_market.webp" alt="Golden Morning Website Page 2" className="w-[48%] inline-block shadow-xl rounded-md m-1" />
-              <img src="/media/websites/gm/flower1.webp" alt="Golden Morning brading example." className="w-[48%] inline-block shadow-xl rounded-md m-1" />
+              <img src="/media/websites/gm/flower1.webp" alt="Golden Morning branding example." className="w-[48%] inline-block shadow-xl rounded-md m-1" />
               <img src="/media/websites/gm/market.webp" alt="Golden Morning branding example." className="w-[48%] inline-block shadow-xl rounded-md m-1" />
             </div>
 
@@ -254,7 +254,7 @@ export default function Home() {
               className="max-w-50 w-full"
             />
             <h3 className="font-semibold text-[2.3rem] text-[#403933] font-outfit tracking-tight leading-10 text-center">
-              Cavlary Christian Acadmey
+              Cavlary Christian Academy
             </h3>
             <div className="flex flex-wrap justify-center gap-3 font-outfit">
               <span className="bg-[#E6DDD8] px-4 py-2 rounded-full">
