@@ -77,7 +77,7 @@ export default function Home() {
               </p>
 
               <p className="text-lg font-outfit mt-4 font-semibold">
-                Starting at $599.
+                Starting at $399.
               </p>
 
               <div className="flex flex-wrap gap-3 mt-6 font-outfit ">
