@@ -15,12 +15,14 @@ export default function Home() {
 
             <p className=" font-extrabold font-crete-round tracking-tighter text-[2.5rem] leading-2 md:text-[4.5rem] md:leading-4 mb-6 text-[#D18601]">lukashahn.art</p>
             <h2 className="font-semibold  text-[1.2rem] leading-5 md:text-[2.3rem] md:leading-10  text-[#403933] font-outfit tracking-tight ">
-              Websites and media creation for local businesses in <span className="text-[#D18601]">Roseburg</span> and <span className="text-[#D18601]">Eugene</span> area.
+              Custom websites, photo, and video for local businesses in the <span className="text-[#D18601]">Roseburg</span> and <span className="text-[#D18601]">Eugene</span> area.
             </h2>
+
 
 
           </div>
           <div className="flex mt-2 md:mt-4 justify-center gap-[2px] md:gap-2 text-md  md:text-2xl font-outfit">
+
             <p>Websites</p>
             <p >•</p>
             <p>Video</p>
@@ -45,6 +47,44 @@ export default function Home() {
         </div>
       </main>
 
+      <div className="bg-[#F2EBE8] w-full">
+        <div className="max-w-4xl h-full mx-auto p-4 mb-20">
+          <div className="-mt-40 mb-40 h-0" id="services"></div>
+          <h2 className="font-semibold text-[2.2rem] md:text-[3rem] text-[#403933] font-outfit tracking-tight  text-center md:mb-8">About Me</h2>
+          <div className="flex gap-4 flex-col md:flex-row">
+            <img src={"/me.webp"} className="flex-1 md:w-[30%]" alt="Example of custom websites." ></img>
+            <div className="flex-2">
+              <h4 className="text-xl font-outfit font-semibold text-[#403933]">
+                Hey there!
+              </h4>
+              <p className="text-lg font-outfit">
+                I'm Lukas, a nineteen year old photographer, videographer, and web designer from <span className="text-[#403933] font-semibold">Roseburg, Oregon</span>.
+              </p>
+
+              <p className="text-lg font-outfit mt-4">
+                Ever since I was twelve when I got my first camera I've had a passion for visual media and design.
+              </p>
+
+              <p className="text-lg font-outfit mt-4">
+                I've done all kinds of work from <span className="text-[#403933] font-semibold">custom websites </span>
+                to <span className="text-[#403933] font-semibold">music videos </span>
+                to <span className="text-[#403933] font-semibold">photoshoots </span>
+                for local small businesses and individuals over the last 5 years.
+              </p>
+
+              <p className="text-lg font-outfit mt-4 italic">
+                I'm <span className="text-[#403933] font-semibold">professional</span>, <span className="text-[#403933] font-semibold">friendly</span>, and <span className="text-[#403933] font-semibold">easy to work with</span>.
+              </p>
+
+
+              {/* <h4 className="text-xl font-outfit font-semibold text-[#403933]">
+                Local, friendly, and easy to work with.
+              </h4> */}
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Services */}
       <div className="bg-[#F2EBE8] w-full">
         <div className="max-w-4xl h-full mx-auto p-4">
@@ -53,7 +93,7 @@ export default function Home() {
 
 
           {/* Custom Built Websites */}
-          <div className="flex gap-4 mt-20 flex-col md:flex-row">
+          <div className="flex gap-4 flex-col md:flex-row">
             <img src={"/media/custom-websites.webp"} className="flex-1  h-100 " alt="Example of custom websites." ></img>
 
 
@@ -388,12 +428,12 @@ export default function Home() {
             <div className="-mt-40 mb-40 h-0" id="testimonials"></div>
             <h2 className="font-semibold  text-[#403933] font-outfit tracking-tight  text-center  text-[2.4rem] leading-12 md:leading-18 md:text-[4rem] ">Testimonials</h2>
             <h3 className="font-medium  text-[#403933] font-outfit tracking-tight text-[1.4rem] leading-6 md:leading-10 md:text-[2.3rem] text-center">
-              Read what others have to say about our work.
+              Read what others have to say about my work.
             </h3>
           </div>
 
           <div className="flex flex-col items-center">
-            <p className="max-w-2xl text-center font-outfit text-xl leading-6 md:text-3xl md:leading-8 italic">
+            <p className="max-w-2xl text-center font-outfit text-xl leading-6  md:text-2xl md:leading-7 italic">
               &ldquo;Lukas designed our school website and the process was wonderful.
               He listened carefully to our needs,creatively suggested solutions,
               and quickly provided exactly what we needed. If you need a website, blog,
@@ -404,7 +444,19 @@ export default function Home() {
 
 
           <div className="flex flex-col items-center  pt-20">
-            <p className="max-w-2xl text-center font-outfit text-xl leading-6 md:text-3xl md:leading-8 italic">
+            <p className="max-w-2xl text-center font-outfit text-xl leading-6 md:text-2xl md:leading-7 italic">
+              &ldquo;I highly recommend Lukas and his services. He is professional, creative, and truly passionate about what he does.
+              With clear communication, attention to detail, and dedication, he made the entire experience smooth and enjoyable.
+              He was bold with suggestions and humble to hear vision. He went above and beyond to meet my business needs,
+              and the final results exceeded expectations.
+              He continues to be supportive with services he offers for our business on going.&rdquo;
+            </p>
+            <p className="font-outfit text-[#403933] text-[1.2rem] mt-4 text-center leading-4">—<span className="font-semibold text-xl">Amber Hahn</span><br />Owner of Golden Morning Flower Farm in Roseburg.</p>
+          </div>
+
+
+          <div className="flex flex-col items-center  pt-20">
+            <p className="max-w-2xl text-center font-outfit text-xl leading-6  md:text-2xl md:leading-7 italic">
               &ldquo;Lukas has done an excellent job for me every time I needed video content
               for my social media and branding for my music project. He is always a good
               hang, collaborative, creative, and gets high quality content done in a timely
