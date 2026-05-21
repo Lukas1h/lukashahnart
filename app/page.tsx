@@ -294,7 +294,7 @@ export default function Home() {
               className="max-w-50 w-full"
             />
             <h3 className="font-semibold text-[2.3rem] text-[#403933] font-outfit tracking-tight leading-10 text-center">
-              Cavlary Christian Academy
+              Calvary Christian Academy
             </h3>
             <div className="flex flex-wrap justify-center gap-3 font-outfit">
               <span className="bg-[#E6DDD8] px-4 py-2 rounded-full">
