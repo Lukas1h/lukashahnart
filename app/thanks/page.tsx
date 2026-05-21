@@ -35,7 +35,7 @@ export default function Home() {
                     <div className="absolute bottom-0 right-0 left-0 h-17.75 bg-[linear-gradient(0deg,#F9F4F1_17.31%,rgba(255,255,255,0)_100%)]"></div>
                 </div>
 
-                <div className="absolute flex flex-col justify-between inset-0 pointer-events-none hero-backgound">
+                <div className="absolute flex flex-col justify-between inset-0 pointer-events-none hero-background">
                     <img src="/dashes-top-desktop.svg" className="hidden sm:block" />
                     <img src="/dashes-bottom-desktop.svg" className="hidden sm:block" />
                     <img src="/dashes-top-mobile.svg" alt="" className="block sm:hidden" />

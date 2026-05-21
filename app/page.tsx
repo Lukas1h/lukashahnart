@@ -39,7 +39,7 @@ export default function Home() {
           <div className="absolute bottom-0 right-0 left-0 h-17.75 bg-[linear-gradient(0deg,#F9F4F1_17.31%,rgba(255,255,255,0)_100%)]"></div>
         </div>
 
-        <div className="absolute flex flex-col justify-between inset-0 pointer-events-none hero-backgound">
+        <div className="absolute flex flex-col justify-between inset-0 pointer-events-none hero-background">
           <img src="/dashes-top-desktop.svg" alt="" className="hidden sm:block" />
           <img src="/dashes-bottom-desktop.svg" alt="" className="hidden sm:block" />
           <img src="/dashes-top-mobile.svg" alt="" className="block sm:hidden" />
@@ -58,7 +58,7 @@ export default function Home() {
                 Hey there!
               </h4>
               <p className="text-lg font-outfit">
-                I'm Lukas, a nineteen year old photographer, videographer, and web designer from <span className="text-[#403933] font-semibold">Roseburg, Oregon</span>.
+                I'm Lukas, a nineteen-year-old photographer, videographer, and web designer from <span className="text-[#403933] font-semibold">Roseburg, Oregon</span>.
               </p>
 
               <p className="text-lg font-outfit mt-4">
@@ -68,7 +68,7 @@ export default function Home() {
               <p className="text-lg font-outfit mt-4">
                 I've done all kinds of work from <span className="text-[#403933] font-semibold">custom websites </span>
                 to <span className="text-[#403933] font-semibold">music videos </span>
-                to <span className="text-[#403933] font-semibold">photoshoots </span>
+                to <span className="text-[#403933] font-semibold">photo shoots </span>
                 for local small businesses and individuals over the last 5 years.
               </p>
 
@@ -233,7 +233,7 @@ export default function Home() {
             <div className="-mt-40 mb-40 h-0" id="portfolio"></div>
             <h2 className="font-semibold  text-[#403933] font-outfit tracking-tight  text-center text-[2.4rem] leading-12 md:leading-18 md:text-[4rem]">Featured Projects</h2>
             <h3 className="font-medium  text-[#403933] font-outfit tracking-tight text-[1.4rem] leading-6 md:leading-10 md:text-[2.3rem] text-center">
-              See how I help local business and individuals grow their media presence.
+              See how I help local businesses and individuals grow their media presence.
             </h3>
           </div>
 
@@ -316,7 +316,7 @@ export default function Home() {
             </p>
 
             <p className=" text-lg md:text-xl font-outfit ">
-              For this project, a completely custom website was designed and developed from the ground up for CCA. The site includes admissions forms, faculty and teacher bios, an updateable school calendar, slideshows, and dedicated pages for academics, testimonials, employment opportunities, and school information. In addition to the website, professional photography and cinematic drone footage were captured to help showcase the campus, classrooms, and student life throughout the site.
+              For this project, a completely custom website was designed and developed from the ground up for CCA. The site includes admissions forms, faculty and teacher bios, an updatable school calendar, slideshows, and dedicated pages for academics, testimonials, employment opportunities, and school information. In addition to the website, professional photography and cinematic drone footage were captured to help showcase the campus, classrooms, and student life throughout the site.
             </p>
             <div>
 
@@ -435,7 +435,7 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <p className="max-w-2xl text-center font-outfit text-xl leading-6  md:text-2xl md:leading-7 italic">
               &ldquo;Lukas designed our school website and the process was wonderful.
-              He listened carefully to our needs,creatively suggested solutions,
+              He listened carefully to our needs, creatively suggested solutions,
               and quickly provided exactly what we needed. If you need a website, blog,
               or custom solution, I wholeheartedly recommend Lukas Hahn&rdquo;
             </p>
@@ -449,7 +449,7 @@ export default function Home() {
               With clear communication, attention to detail, and dedication, he made the entire experience smooth and enjoyable.
               He was bold with suggestions and humble to hear vision. He went above and beyond to meet my business needs,
               and the final results exceeded expectations.
-              He continues to be supportive with services he offers for our business on going.&rdquo;
+              He continues to be supportive with services he offers for our business ongoing.&rdquo;
             </p>
             <p className="font-outfit text-[#403933] text-[1.2rem] mt-4 text-center leading-4">—<span className="font-semibold text-xl">Amber Hahn</span><br />Owner of Golden Morning Flower Farm in Roseburg.</p>
           </div>
