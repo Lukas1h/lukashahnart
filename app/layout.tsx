@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Noto_Serif, Outfit, Crete_Round } from "next/font/google";
 import "./globals.css";
 import Header from "@/lib/components/header";
+import { Analytics } from "@vercel/analytics/next";
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -49,7 +50,9 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-[#F9F4F1]">
         <Header></Header>
-        {children}</body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
