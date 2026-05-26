@@ -3,6 +3,7 @@ import { Inter, Noto_Serif, Outfit, Crete_Round } from "next/font/google";
 import "./globals.css";
 import Header from "@/lib/components/header";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -52,6 +53,7 @@ export default function RootLayout({
         <Header></Header>
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
