@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-poppins);
+  --font-script: var(--font-script);
+}
+
+body {
+    background-color: #ffeed9;
+}

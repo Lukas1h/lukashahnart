@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Serif, Outfit, Crete_Round } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Header from "@/lib/components/header";
 import { Analytics } from "@vercel/analytics/next";
 const inter = Inter({
