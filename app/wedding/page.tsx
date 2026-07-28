@@ -10,12 +10,33 @@ export default function WeddingPage() {
           <span className="h-px w-16 bg-[#3a2f28]/30" />
         </div>
 
+        <div className="mb-14">
+          <p className="uppercase tracking-[0.25em] text-sm font-semibold text-[#3a2f28]/70">
+            RSVP
+          </p>
+          <p className="text-2xl font-semibold mt-2">
+            Please RSVP by September 1st, 2026
+          </p>
+          <a
+            href="tel:5414303372"
+            className="italic text-lg mt-1 inline-block text-[#3a2f28]/80 underline underline-offset-4 decoration-[#3a2f28]/40 hover:text-[#3a2f28] transition"
+          >
+            541-430-3372
+          </a>
+        </div>
+
+        <div className="flex items-center justify-center gap-4 mb-14">
+          <span className="h-px w-16 bg-[#3a2f28]/30" />
+          <span className="text-xl">✦</span>
+          <span className="h-px w-16 bg-[#3a2f28]/30" />
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-14 max-w-2xl mx-auto">
           <div>
             <p className="uppercase tracking-[0.25em] text-sm font-semibold text-[#3a2f28]/70">
               When
             </p>
-            <p className="text-2xl font-semibold mt-2">September 19, 2026</p>
+            <p className="text-2xl font-semibold mt-2">September 19th, 2026</p>
             <p className="italic text-lg mt-1 text-[#3a2f28]/80">4:00 PM</p>
           </div>
 
@@ -23,7 +44,7 @@ export default function WeddingPage() {
             <p className="uppercase tracking-[0.25em] text-sm font-semibold text-[#3a2f28]/70">
               Where
             </p>
-            <p className="text-2xl font-semibold mt-2">668 Winston Section Rd</p>
+            <p className="text-2xl font-semibold mt-2">668 Winston Section Rd, Winston, OR</p>
             <p className="italic text-lg mt-1 text-[#3a2f28]/80">Ceremony & Reception</p>
           </div>
 
