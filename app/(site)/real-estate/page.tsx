@@ -61,6 +61,28 @@ export default function Home() {
                             <div className="md:w-1/2">
                                 <div className="aspect-video rounded-2xl overflow-hidden shadow-lg">
                                     <iframe
+                                        src="https://www.youtube-nocookie.com/embed/pYjeklEaM8U"
+                                        title="Featured Property Tour"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                        className="w-full h-full"
+                                    />
+                                </div>
+                            </div>
+                            <div className="md:w-1/2 flex items-center">
+                                <div className="rounded-[2rem] h-full  w-full">
+                                    <h3 className="font-crete-round text-3xl text-[#D18601] font-semibold">Southview Drive</h3>
+                                    <h4 className="-mt-2 font-crete-round text-lg text-[#403933] mb-2 font-outfit tracking-tight  font-semibold">Eugene Oregon</h4>
+                                    <p className=" font-outfit md:text-lg">
+                                        Luxiurous, brand-new development with four bed, four bath, and two car garage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col md:flex-row-reverse items-stretch gap-6">
+                            <div className="md:w-1/2">
+                                <div className="aspect-video rounded-2xl overflow-hidden shadow-lg">
+                                    <iframe
                                         src="https://www.youtube-nocookie.com/embed/peNBeuqA410"
                                         title="Featured Property Tour"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -83,7 +105,7 @@ export default function Home() {
                             </div>
                         </div>
                         {/* Card 2 - alternate layout on md+ */}
-                        <div className="flex flex-col md:flex-row-reverse items-stretch gap-6">
+                        <div className="flex flex-col md:flex-row items-stretch gap-6">
                             <div className="md:w-1/2">
                                 <div className="aspect-video rounded-2xl overflow-hidden shadow-lg">
                                     <iframe
@@ -105,6 +127,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </section>
