@@ -1,5 +1,4 @@
 import Image from "next/image";
-import YoutubeLazy from "./YoutubeLazy";
 import Header from "./Header";
 
 export default function Home() {
@@ -88,14 +87,26 @@ export default function Home() {
                     <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
                         <div>
                             <div className="relative aspect-video overflow-hidden border border-white/10">
-                                <YoutubeLazy videoId="peNBeuqA410" title="Arline Way" />
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/peNBeuqA410"
+                                    title="Arline Way"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    className="absolute inset-0 h-full w-full"
+                                />
                             </div>
                             <h3 className="mt-4 font-heading text-xl font-bold text-[#F9F4F1]">Arline Way</h3>
                             <p className="mt-1 font-outfit text-xs uppercase tracking-[0.2em] text-[#F9F4F1]">Eugene Oregon</p>
                         </div>
                         <div>
                             <div className="relative aspect-video overflow-hidden border border-white/10">
-                                <YoutubeLazy videoId="gB_GGJD2IMQ" title="Woodland Drive" />
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/gB_GGJD2IMQ"
+                                    title="Woodland Drive"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    className="absolute inset-0 h-full w-full"
+                                />
                             </div>
                             <h3 className="mt-4 font-heading text-xl font-bold text-[#F9F4F1]">Woodland Drive</h3>
                             <p className="mt-1 font-outfit text-xs uppercase tracking-[0.2em] text-[#F9F4F1]">Roseburg Oregon</p>
