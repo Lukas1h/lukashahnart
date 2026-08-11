@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "./Header";
+import HeroVideo from "./HeroVideo";
 
 export default function Home() {
     return (
@@ -31,12 +32,7 @@ export default function Home() {
             {/* Featured Video */}
             <section className="relative z-10 -mt-20 px-4 sm:-mt-28 md:-mt-32">
                 <div className="relative mx-auto aspect-video max-w-4xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60">
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/pYjeklEaM8U?autoplay=1&mute=1&loop=1&playlist=pYjeklEaM8U&controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&disablekb=1&playsinline=1"
-                        title="Southview Drive"
-                        allow="autoplay; encrypted-media; picture-in-picture"
-                        className="pointer-events-none absolute inset-0 h-full w-full"
-                    />
+                    <HeroVideo videoId="NVY-MTRMcPA" title="Summit Sky" />
                 </div>
             </section>
 
@@ -85,6 +81,32 @@ export default function Home() {
                         More Videos
                     </h2>
                     <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
+                        <div>
+                            <div className="relative aspect-video overflow-hidden border border-white/10">
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/pYjeklEaM8U"
+                                    title="Timberline Hills"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    className="absolute inset-0 h-full w-full"
+                                />
+                            </div>
+                            <h3 className="mt-4 font-heading text-xl font-bold text-[#F9F4F1]">Timberline Hills</h3>
+                            <p className="mt-1 font-outfit text-xs uppercase tracking-[0.2em] text-[#F9F4F1]">Eugene Oregon</p>
+                        </div>
+                        <div>
+                            <div className="relative aspect-video overflow-hidden border border-white/10">
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/NVY-MTRMcPA"
+                                    title="Summit Sky"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    className="absolute inset-0 h-full w-full"
+                                />
+                            </div>
+                            <h3 className="mt-4 font-heading text-xl font-bold text-[#F9F4F1]">Summit Sky</h3>
+                            <p className="mt-1 font-outfit text-xs uppercase tracking-[0.2em] text-[#F9F4F1]">Eugene Oregon</p>
+                        </div>
                         <div>
                             <div className="relative aspect-video overflow-hidden border border-white/10">
                                 <iframe
