@@ -36,43 +36,8 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Services */}
-            <section id="services" className="w-full scroll-mt-24 bg-[#181A1C] px-4 pb-20 pt-16 md:pb-28 md:pt-20">
-                <div className="mx-auto max-w-2xl">
-                    <p className="mb-3 text-center font-outfit text-xs font-medium uppercase tracking-[0.4em] text-[#F9F4F1]">
-                        Pricing
-                    </p>
-                    <h2 className="mb-12 text-center font-heading text-3xl font-bold tracking-tight text-[#F9F4F1] md:mb-16 md:text-4xl">
-                        Services
-                    </h2>
-                    <div className="divide-y divide-white/15 border-y border-white/15">
-                        <div className="flex items-start justify-between gap-8 py-8">
-                            <div>
-                                <p className="font-outfit text-lg text-[#F9F4F1]">Interior / Exterior Photography</p>
-                                <p className="mt-2 font-outfit text-xs uppercase tracking-[0.15em] text-[#F9F4F1]">+$100 Aerial Drone Footage</p>
-                            </div>
-                            <p className="whitespace-nowrap font-heading text-2xl font-bold text-[#F9F4F1]">$300</p>
-                        </div>
-                        <div className="flex items-start justify-between gap-8 py-8">
-                            <div>
-                                <p className="font-outfit text-lg text-[#F9F4F1]">Walkthrough Video</p>
-                                <p className="mt-2 font-outfit text-xs uppercase tracking-[0.15em] text-[#F9F4F1]">+$100 Social Media Edit</p>
-                            </div>
-                            <p className="whitespace-nowrap font-heading text-2xl font-bold text-[#F9F4F1]">$400</p>
-                        </div>
-                        <div className="flex items-start justify-between gap-8 py-8">
-                            <div>
-                                <p className="font-outfit text-lg text-[#F9F4F1]">Photography &amp; Walkthrough Video</p>
-                                <p className="mt-2 font-outfit text-xs uppercase tracking-[0.15em] text-[#F9F4F1]">Including Drone &amp; Social</p>
-                            </div>
-                            <p className="whitespace-nowrap font-heading text-2xl font-bold text-[#F9F4F1]">$700</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             {/* More Videos */}
-            <section id="portfolio" className="w-full scroll-mt-24 bg-[#181A1C] px-4 pb-20 md:pb-28">
+            <section id="portfolio" className="w-full scroll-mt-24 bg-[#181A1C] pt-16 px-4 pb-20 md:pb-28">
                 <div className="mx-auto max-w-4xl">
                     <p className="mb-3 text-center font-outfit text-xs font-medium uppercase tracking-[0.4em] text-[#F9F4F1]">
                         Portfolio
@@ -136,6 +101,42 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            {/* Services */}
+            <section id="services" className="w-full scroll-mt-24 bg-[#181A1C] px-4 pb-20 md:pb-28 md:pt-20">
+                <div className="mx-auto max-w-2xl">
+                    <p className="mb-3 text-center font-outfit text-xs font-medium uppercase tracking-[0.4em] text-[#F9F4F1]">
+                        Pricing
+                    </p>
+                    <h2 className="mb-12 text-center font-heading text-3xl font-bold tracking-tight text-[#F9F4F1] md:mb-16 md:text-4xl">
+                        Services
+                    </h2>
+                    <div className="divide-y divide-white/15 border-y border-white/15">
+                        <div className="flex items-start justify-between gap-8 py-8">
+                            <div>
+                                <p className="font-outfit text-lg text-[#F9F4F1]">Interior / Exterior Photography</p>
+                                <p className="mt-2 font-outfit text-xs uppercase tracking-[0.15em] text-[#F9F4F1]">+$100 Aerial Drone Footage</p>
+                            </div>
+                            <p className="whitespace-nowrap font-heading text-2xl font-bold text-[#F9F4F1]">$300</p>
+                        </div>
+                        <div className="flex items-start justify-between gap-8 py-8">
+                            <div>
+                                <p className="font-outfit text-lg text-[#F9F4F1]">Walkthrough Video</p>
+                                <p className="mt-2 font-outfit text-xs uppercase tracking-[0.15em] text-[#F9F4F1]">+$100 Social Media Edit</p>
+                            </div>
+                            <p className="whitespace-nowrap font-heading text-2xl font-bold text-[#F9F4F1]">$400</p>
+                        </div>
+                        <div className="flex items-start justify-between gap-8 py-8">
+                            <div>
+                                <p className="font-outfit text-lg text-[#F9F4F1]">Photography &amp; Walkthrough Video</p>
+                                <p className="mt-2 font-outfit text-xs uppercase tracking-[0.15em] text-[#F9F4F1]">Including Drone &amp; Social</p>
+                            </div>
+                            <p className="whitespace-nowrap font-heading text-2xl font-bold text-[#F9F4F1]">$700</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 
             {/* Contact */}
             <section id="contact" className="w-full scroll-mt-24 bg-[#181A1C] px-4 pb-24 pt-16 md:pb-32 md:pt-20">
