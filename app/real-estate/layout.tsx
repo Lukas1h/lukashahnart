@@ -24,7 +24,7 @@ export default function RealEstate2Layout({
 }>) {
   return (
     <html lang="en" className={`${notoSerif.variable} ${outfit.variable} antialiased scroll-smooth`}>
-      <body className="min-h-screen bg-[#181A1C] text-[#F9F4F1] font-outfit">
+      <body className="min-h-screen bg-white text-[#181A1C] font-outfit">
         {children}
       </body>
     </html>
