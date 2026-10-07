@@ -10,9 +10,9 @@ export default function Header() {
 
             <nav className="flex gap-8 items-center select-none">
                 <div className="gap-8 items-center  hidden md:flex">
-                    <HeaderNavLink href="/#services">Services</HeaderNavLink>
-                    <HeaderNavLink href="/#portfolio">Portfolio</HeaderNavLink>
-                    <HeaderNavLink href="/#testimonials">Testimonials</HeaderNavLink>
+                    <HeaderNavLink href="/other#services">Services</HeaderNavLink>
+                    <HeaderNavLink href="/other#portfolio">Portfolio</HeaderNavLink>
+                    <HeaderNavLink href="/other#testimonials">Testimonials</HeaderNavLink>
                 </div>
 
                 <HeaderCTA />

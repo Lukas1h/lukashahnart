@@ -2,16 +2,136 @@ import Image from "next/image";
 import Header from "./Header";
 import HeroVideo from "./HeroVideo";
 
+type Photo = { src: string; alt: string };
+
+const photo = (file: string, alt: string): Photo => ({ src: `/real-estate/gallery/${file}.jpg`, alt });
+
+// Full-width photos that open, split, and close the gallery.
+const heroPhoto = photo("1", "Bright dining room with pendant light and garden views");
+const middlePhoto = photo("south-bank-11", "Aerial drone view of a river winding through an Oregon valley");
+const closingPhoto = photo("6", "Modern two-story home exterior with wood and dark siding");
+
+const gridTop: Photo[] = [
+    photo("dalton-ct-25", "Open-concept living room with sectional sofa and kitchen"),
+    photo("2", "Living room with black tile fireplace and large windows"),
+    photo("alameda-13", "Spacious kitchen with island and wood cabinets"),
+    photo("4", "Kitchen with marble island and pendant lights"),
+    photo("south-bank-17", "Backyard fire pit with Adirondack chairs among tall trees"),
+    photo("7", "Aerial view of a single-story home at sunset"),
+    photo("dalton-ct-30", "Primary bedroom with soft natural light"),
+    photo("10", "Long kitchen with wood cabinets and dining nook"),
+    photo("alameda-22", "Living area with sliding door and mountain views"),
+    photo("11", "Ranch home exterior at twilight"),
+    photo("dalton-ct-26", "Living room with black fireplace wall"),
+    photo("3", "Kitchen detail with gas range and warm lighting"),
+];
+
+const gridBottom: Photo[] = [
+    photo("dalton-ct-01", "Modern single-story home exterior with landscaped yard"),
+    photo("5", "Kitchen with stainless range and marble counters"),
+    photo("south-bank-1", "Wooded property with tall evergreen trees"),
+    photo("9", "Covered front porch with stone columns"),
+    photo("dalton-ct-24", "Great room with kitchen, dining, and living area"),
+    photo("12", "Bedroom with two windows and natural light"),
+    photo("alameda-19", "Open kitchen and living space with valley views"),
+    photo("13", "Covered patio with garden and fence"),
+    photo("dalton-ct-23", "Dining nook with wood table and modern art"),
+    photo("8", "Bedroom with arched window and French doors"),
+    photo("dalton-ct-37", "Kids bedroom with bunk beds"),
+    photo("wingfoot-13", "Vaulted living room with sliding glass door"),
+];
+
+const photoAlt = (alt: string) => `${alt} — real estate photography by Hahn Media, Oregon`;
+
+function FeaturePhoto({ photo, priority = false }: { photo: Photo; priority?: boolean }) {
+    return (
+        <div className="relative aspect-[3/2] w-full overflow-hidden">
+            <Image
+                src={photo.src}
+                alt={photoAlt(photo.alt)}
+                fill
+                priority={priority}
+                sizes="(min-width: 1024px) 1024px, 100vw"
+                className="object-cover"
+            />
+        </div>
+    );
+}
+
+function PhotoGrid({ photos }: { photos: Photo[] }) {
+    return (
+        <div className="my-2 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
+            {photos.map((p) => (
+                <div key={p.src} className="relative aspect-[3/2] overflow-hidden">
+                    <Image
+                        src={p.src}
+                        alt={photoAlt(p.alt)}
+                        fill
+                        sizes="(min-width: 768px) 25vw, (min-width: 640px) 33vw, 50vw"
+                        className="object-cover"
+                    />
+                </div>
+            ))}
+        </div>
+    );
+}
+
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://lukashahn.art/#business",
+    name: "Hahn Media",
+    description:
+        "Real estate photography, cinematic walkthrough video, drone photography, and floor plans for agents in Eugene and Roseburg, Oregon.",
+    url: "https://lukashahn.art",
+    image: "https://lukashahn.art/real-estate/gallery/1.jpg",
+    email: "lukas@lukashahn.art",
+    telephone: "+1-541-430-3372",
+    priceRange: "$300–$700",
+    founder: { "@type": "Person", name: "Lukas Hahn" },
+    hasMap: "https://maps.google.com/?cid=15332850986364745694",
+    sameAs: ["https://maps.google.com/?cid=15332850986364745694"],
+    address: {
+        "@type": "PostalAddress",
+        addressLocality: "Roseburg",
+        addressRegion: "OR",
+        addressCountry: "US",
+    },
+    areaServed: [
+        { "@type": "City", name: "Eugene, Oregon" },
+        { "@type": "City", name: "Roseburg, Oregon" },
+    ],
+    makesOffer: [
+        { name: "Interior / Exterior Photography", price: "300" },
+        { name: "Walkthrough Video", price: "400" },
+        { name: "Photography & Walkthrough Video", price: "700" },
+    ].map(({ name, price }) => ({
+        "@type": "Offer",
+        price,
+        priceCurrency: "USD",
+        itemOffered: { "@type": "Service", name, serviceType: "Real estate photography and video" },
+    })),
+};
+
 export default function Home() {
     return (
         <div id="top" className="min-h-screen flex flex-col font-sans bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+                }}
+            />
             <Header />
 
             {/* Cinematic headline */}
             <section className="w-full px-4 pt-32 pb-8 text-center md:pt-40">
-                <h1 className="mx-auto max-w-2xl font-heading text-3xl font-bold leading-tight tracking-tight text-[#D67F1F] md:text-4xl">
-                    Cinematic media that sells listings quicker.
+                <h1 className="mb-3 font-outfit text-xs font-medium uppercase tracking-[0.4em] text-[#995000]">
+                    Real Estate Photography &amp; Video in Eugene &amp; Roseburg, Oregon
                 </h1>
+                <p className="mx-auto max-w-2xl font-heading text-3xl font-bold leading-tight tracking-tight text-[#D67F1F] md:text-4xl">
+                    Cinematic media that sells listings quicker.
+                </p>
                 <div className="mx-auto mt-4 h-[2px] w-11 bg-[#995000]" />
             </section>
 
@@ -40,29 +160,11 @@ export default function Home() {
                     <h2 className="mb-12 text-center font-heading text-3xl font-bold tracking-tight text-[#181A1C] md:mb-16 md:text-4xl">
                         Photo Portfolio
                     </h2>
-                    <div className="relative aspect-[3/2] w-full overflow-hidden">
-                        <Image
-                            src="/real-estate/gallery/1.jpg"
-                            alt="Real estate photography, dining room"
-                            fill
-                            priority
-                            sizes="100vw"
-                            className="object-cover"
-                        />
-                    </div>
-                    <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
-                        {[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((n) => (
-                            <div key={n} className="relative aspect-[3/2] overflow-hidden">
-                                <Image
-                                    src={`/real-estate/gallery/${n}.jpg`}
-                                    alt="Real estate photography"
-                                    fill
-                                    sizes="(min-width: 768px) 25vw, (min-width: 640px) 33vw, 50vw"
-                                    className="object-cover"
-                                />
-                            </div>
-                        ))}
-                    </div>
+                    <FeaturePhoto photo={heroPhoto} priority />
+                    <PhotoGrid photos={gridTop} />
+                    <FeaturePhoto photo={middlePhoto} />
+                    <PhotoGrid photos={gridBottom} />
+                    <FeaturePhoto photo={closingPhoto} />
                 </div>
             </section>
 
@@ -243,15 +345,19 @@ export default function Home() {
                             <div className="mt-10 divide-y divide-[#181A1C]/15 border-y border-[#181A1C]/15">
                                 <div className="flex items-baseline justify-between gap-6 py-5">
                                     <p className="font-outfit text-xs uppercase tracking-[0.2em] text-[#181A1C]/60">Email</p>
-                                    <p className="font-outfit text-[#181A1C]">lukas@lukashahn.art</p>
+                                    <a href="mailto:lukas@lukashahn.art" className="font-outfit text-[#181A1C] transition hover:text-[#D67F1F]">lukas@lukashahn.art</a>
                                 </div>
                                 <div className="flex items-baseline justify-between gap-6 py-5">
                                     <p className="font-outfit text-xs uppercase tracking-[0.2em] text-[#181A1C]/60">Phone</p>
-                                    <p className="font-outfit text-[#181A1C]">+1 541 430 3372</p>
+                                    <a href="tel:+15414303372" className="font-outfit text-[#181A1C] transition hover:text-[#D67F1F]">+1 541 430 3372</a>
                                 </div>
                                 <div className="flex items-baseline justify-between gap-6 py-5">
                                     <p className="font-outfit text-xs uppercase tracking-[0.2em] text-[#181A1C]/60">Location</p>
                                     <p className="font-outfit text-[#181A1C]">Roseburg &amp; Eugene, Oregon</p>
+                                </div>
+                                <div className="flex items-baseline justify-between gap-6 py-5">
+                                    <p className="font-outfit text-xs uppercase tracking-[0.2em] text-[#181A1C]/60">Reviews</p>
+                                    <a href="https://maps.app.goo.gl/WMhhHxSnYozHLfBP8" target="_blank" rel="noopener" className="font-outfit text-[#181A1C] transition hover:text-[#D67F1F]">Google</a>
                                 </div>
                             </div>
                         </div>

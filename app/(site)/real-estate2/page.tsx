@@ -1,7 +1,10 @@
-
-
+import type { Metadata } from 'next';
 import Header from '@/lib/components/header';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+    robots: { index: false, follow: true },
+};
 
 export default function Home() {
     return (

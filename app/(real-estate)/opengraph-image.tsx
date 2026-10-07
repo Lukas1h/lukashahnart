@@ -12,9 +12,9 @@ export const contentType = "image/png";
 
 export default async function Image() {
     const [notoSerifBold, outfitMedium, bg] = await Promise.all([
-        readFile(join(process.cwd(), "app/real-estate/NotoSerif-Bold.woff")),
-        readFile(join(process.cwd(), "app/real-estate/Outfit-Medium.woff")),
-        readFile(join(process.cwd(), "app/real-estate/og-bg.jpg")),
+        readFile(join(process.cwd(), "app/(real-estate)/NotoSerif-Bold.woff")),
+        readFile(join(process.cwd(), "app/(real-estate)/Outfit-Medium.woff")),
+        readFile(join(process.cwd(), "app/(real-estate)/og-bg.jpg")),
     ]);
     const bgSrc = `data:image/jpeg;base64,${bg.toString("base64")}`;
 
