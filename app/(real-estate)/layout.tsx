@@ -18,7 +18,7 @@ const description =
   "Real estate photography, cinematic walkthrough video, drone photography, and floor plans for agents in Eugene and Roseburg, Oregon. Photos delivered in 24 hours.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lukashahn.art"),
+  metadataBase: new URL("https://www.lukashahn.art"),
   title: "Hahn Media | Real Estate Photography & Video in Eugene & Roseburg, Oregon",
   description,
   alternates: {

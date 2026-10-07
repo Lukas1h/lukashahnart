@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://lukashahn.art/sitemap.xml",
+    sitemap: "https://www.lukashahn.art/sitemap.xml",
   };
 }

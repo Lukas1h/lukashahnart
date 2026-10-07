@@ -79,12 +79,12 @@ function PhotoGrid({ photos }: { photos: Photo[] }) {
 const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://lukashahn.art/#business",
+    "@id": "https://www.lukashahn.art/#business",
     name: "Hahn Media",
     description:
         "Real estate photography, cinematic walkthrough video, drone photography, and floor plans for agents in Eugene and Roseburg, Oregon.",
-    url: "https://lukashahn.art",
-    image: "https://lukashahn.art/real-estate/gallery/1.jpg",
+    url: "https://www.lukashahn.art",
+    image: "https://www.lukashahn.art/real-estate/gallery/1.jpg",
     email: "lukas@lukashahn.art",
     telephone: "+1-541-430-3372",
     priceRange: "$300–$700",
