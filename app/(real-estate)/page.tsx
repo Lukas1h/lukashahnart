@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "./Header";
 import HeroVideo from "./HeroVideo";
+import RecentListings from "./RecentListings";
 
 type Photo = { src: string; alt: string };
 
@@ -167,6 +168,9 @@ export default function Home() {
                     <FeaturePhoto photo={closingPhoto} />
                 </div>
             </section>
+
+            {/* Recent Listings (from LeadFinder) */}
+            <RecentListings />
 
             {/* More Videos */}
             <section className="w-full bg-[#F9F4F1] pt-16 px-4 pb-20 md:pb-28">
