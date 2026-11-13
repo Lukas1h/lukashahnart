@@ -8,38 +8,31 @@ type Photo = { src: string; alt: string };
 const photo = (file: string, alt: string): Photo => ({ src: `/real-estate/gallery/${file}.jpg`, alt });
 
 // Full-width photos that open, split, and close the gallery.
-const heroPhoto = photo("1", "Bright dining room with pendant light and garden views");
-const middlePhoto = photo("south-bank-11", "Aerial drone view of a river winding through an Oregon valley");
-const closingPhoto = photo("6", "Modern two-story home exterior with wood and dark siding");
+const heroPhoto = photo("01", "Dining nook with round wood table, woven pendant light and garden windows");
+const middlePhoto = photo("05", "Empty living room with vaulted wood-beam ceiling, arched windows and red rug");
+const closingPhotos: Photo[] = [photo("15", "Exterior of olive-green house with brick chimney and two-car garage"), photo("17", "Aerial drone view of house and fenced acreage surrounded by autumn woods")];
 
+// Eight per grid: full rows at two and four columns.
 const gridTop: Photo[] = [
-    photo("dalton-ct-25", "Open-concept living room with sectional sofa and kitchen"),
-    photo("2", "Living room with black tile fireplace and large windows"),
-    photo("alameda-13", "Spacious kitchen with island and wood cabinets"),
-    photo("4", "Kitchen with marble island and pendant lights"),
-    photo("south-bank-17", "Backyard fire pit with Adirondack chairs among tall trees"),
-    photo("7", "Aerial view of a single-story home at sunset"),
-    photo("dalton-ct-30", "Primary bedroom with soft natural light"),
-    photo("10", "Long kitchen with wood cabinets and dining nook"),
-    photo("alameda-22", "Living area with sliding door and mountain views"),
-    photo("11", "Ranch home exterior at twilight"),
-    photo("dalton-ct-26", "Living room with black fireplace wall"),
-    photo("3", "Kitchen detail with gas range and warm lighting"),
+    photo("02", "Living room with black tile fireplace, white sofa and large windows"),
+    photo("03", "Kitchen with light oak cabinets, navy island and glass globe pendants"),
+    photo("04", "Kitchen with black cabinets, black island and sliding door to deck"),
+    photo("10", "Empty peach-walled room with arched window and French doors"),
+    photo("06", "Empty room with large windows overlooking autumn trees"),
+    photo("07", "Kitchen counter detail with light wood cabinets and stainless range hood"),
+    photo("08", "Kitchen sink with black faucet below window of red autumn leaves"),
+    photo("09", "Bedroom with peach bedding, brass floor lamp and leaning wood mirror"),
 ];
 
 const gridBottom: Photo[] = [
-    photo("dalton-ct-01", "Modern single-story home exterior with landscaped yard"),
-    photo("5", "Kitchen with stainless range and marble counters"),
-    photo("south-bank-1", "Wooded property with tall evergreen trees"),
-    photo("9", "Covered front porch with stone columns"),
-    photo("dalton-ct-24", "Great room with kitchen, dining, and living area"),
-    photo("12", "Bedroom with two windows and natural light"),
-    photo("alameda-19", "Open kitchen and living space with valley views"),
-    photo("13", "Covered patio with garden and fence"),
-    photo("dalton-ct-23", "Dining nook with wood table and modern art"),
-    photo("8", "Bedroom with arched window and French doors"),
-    photo("dalton-ct-37", "Kids bedroom with bunk beds"),
-    photo("wingfoot-13", "Vaulted living room with sliding glass door"),
+    photo("11", "Bathroom with wood vanity, marble counter and glass walk-in shower"),
+    photo("12", "Empty room with light wood floors and window overlooking a covered deck"),
+    photo("13", "Open kitchen and dining space with white cabinets, island and ceiling fan"),
+    photo("14", "Empty bedroom with wood floors and window framing autumn hillside views"),
+    photo("19", "Aerial drone view of house in autumn woods with mountains beyond"),
+    photo("16", "Exterior of sage green ranch house with white garage door and lawn"),
+    photo("20", "Covered patio with wood pergola roof, stone columns and fenced garden"),
+    photo("18", "Exterior of gray-green house with covered porch and leaf-covered yard"),
 ];
 
 const photoAlt = (alt: string) => `${alt} — real estate photography by Hahn Media, Oregon`;
@@ -85,7 +78,7 @@ const jsonLd = {
     description:
         "Real estate photography, cinematic walkthrough video, drone photography, and floor plans for agents in Eugene and Roseburg, Oregon.",
     url: "https://www.lukashahn.art",
-    image: "https://www.lukashahn.art/real-estate/gallery/1.jpg",
+    image: "https://www.lukashahn.art/real-estate/gallery/01.jpg",
     email: "lukas@lukashahn.art",
     telephone: "+1-541-430-3372",
     priceRange: "$300–$700",
@@ -165,7 +158,11 @@ export default function Home() {
                     <PhotoGrid photos={gridTop} />
                     <FeaturePhoto photo={middlePhoto} />
                     <PhotoGrid photos={gridBottom} />
-                    <FeaturePhoto photo={closingPhoto} />
+                    {closingPhotos.map((p, i) => (
+                        <div key={p.src} className={i > 0 ? "mt-2" : undefined}>
+                            <FeaturePhoto photo={p} />
+                        </div>
+                    ))}
                 </div>
             </section>
 
